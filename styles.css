@@ -305,7 +305,7 @@ body {
 }
 /* Image inside fish details */
 .fishimg {
-    width:300px;
+    width:240px;
     height: 220px;
     margin-top: 30px;
     margin: 10px;
@@ -900,6 +900,3 @@ button.delete {
         font-size:12px;
     }   
     } 
-
-
-
