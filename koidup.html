@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poseidon Aquatics</title>
+    <link rel="stylesheet" href="styles1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <button class="menu-button" id="menuButton" onclick="toggleMenu()">&#9776;</button>
+
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <div class="side-menu" id="sideMenu">
+        <a class="nav-button" href="index.html">Home</a>
+        <a class="nav-button" href="fish.html">All Fish</a>
+        <a class="nav-button" href="exotic.html">Exotic Fish & Cichlids</a>
+        <a class="nav-button" href="monster.html">Monster Fish</a>
+        <a class="nav-button" href="koi.html">Koi Fish</a>
+        <a class="nav-button" href="lobster.html">Lobsters & Shrimps</a>
+        <a class="nav-button" href="about.html">About Us</a>
+        <a class="nav-button" href="cart.html">Cart</a>
+    </div>
+
+    <div class="topred">
+        <h1 class="heading">POSEIDON AQUATICS</h1>
+        <img class="logotop" src="poseidon-logo.png.jpeg" alt="Poseidon Aquatics Logo">
+    </div>
+
+    <div class="hero-video">
+        <video autoplay muted loop>
+            <source src="IMG_2031.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="fishcontainer">
+        <div class="fishdetails">
+            <img class="fishimg" src="koi.jpg" alt="Koi Fish">
+            <p onclick="toggleDescription('desc1')" class="name">Milky White Veiltail Koi 10"</p>
+            <p class="price">Price : Rs. 800</p>
+            <p class="description" id="desc1" style="display: none;">The Milky White Koi Carp is a stunning, pure white koi with a glossy sheen and smooth, symmetrical fins. It grows up to 24-36 inches (60-90 cm) and can weigh up to 20 pounds (9 kg), with a lifespan of 20-30 years (or 40+ with excellent care). It thrives in water temperatures of 15-25°C, pH levels of 7.0-8.0, and requires a spacious, well-oxygenated pond at least 3 feet deep. Feed it a balanced diet of high-quality pellets, vegetables, and occasional protein treats for optimal growth and health.</p>
+            <button class="cartbutton" onclick="addToCart('Milky White Veiltail Koi 10',800)">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exotic Fish & Cichlids - Poseidon Aquatics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Menu Button -->
+    <button class="menu-button" id="menuButton" onclick="toggleMenu()">&#9776;</button>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <a class="nav-button" href="index.html">Home</a>
+        <a class="nav-button" href="fish.html">All Fish</a>
+        <a class="nav-button" href="exotic.html">Exotic Fish & Cichlids</a>
+        <a class="nav-button" href="monster.html">Monster Fish</a>
+        <a class="nav-button" href="koi.html">Koi Fish</a>
+        <a class="nav-button" href="lobster.html">Lobsters & Shrimps</a>
+        <a class="nav-button" href="about.html">About Us</a>
+        <a class="nav-button" href="cart.html">Cart</a>
+    </div>
+
+    <div class="topred">
+        <h1 class="heading1">POSEIDON AQUATICS</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search fish..." onkeyup="searchFish()">
+            <button onclick="searchFish()"><i class="fa fa-search"></i></button>
+        </div>
+        <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart" style="font-size:24px; width: 18px;height: 18px;"></i></a>
+        <img class="logotop" src="poseidon-logo.png.jpeg" alt="Poseidon Aquatics Logo">
+    </div>
+
+    <div class="fishcontainer">
+        <div class="fishdetails">
+            <img class="fishimg" src="deamonson.jpg" alt="Demanson's Cichlid">
+            <p class="name" onclick="toggleDescription('desc1')">Demanson's Cichlid 3-4</p>
+            <p class="price">Price: Rs. 350 each</p>
+            <p class="description" id="desc1" style="display: none;">African Cichlids are colorful, territorial fish native to African lakes like Lake Malawi. They thrive in stable, well-maintained tanks with slightly alkaline, hard water. Lifespan: 8 to 15 years.</p>
+            <button class="cartbutton" onclick="addToCart('Demanson\'s Cichlid', 350)">Add to Cart</button>
+        </div>
+
+        <div class="fishdetails">
+            <img class="fishimg" src="redspotted.jpg" alt="Redspotted Severum">
+            <p class="name" onclick="toggleDescription('desc2')">Redspotted Severum 7</p>
+            <p class="price">Price: Rs. 1200 each</p>
+            <p class="description" id="desc2" style="display: none;">The Redspotted Severum is a vibrant freshwater cichlid known for its bright green body and distinct red spots. Lifespan: 10 to 15 years. Ideal pH: 6.5 to 7.5.</p>
+            <button class="cartbutton" onclick="addToCart('Redspotted Severum', 1200)">Add to Cart</button>
+        </div>
+
+        <div class="fishdetails">
+            <img class="fishimg" src="blackberry.jpg" alt="Black Berry Dollar">
+            <p class="name" onclick="toggleDescription('desc3')">Black Berry Dollar 3-4</p>
+            <p class="price">Price: Rs. 850 each</p>
+            <p class="description" id="desc3" style="display: none;">A striking freshwater fish with deep black body and metallic, iridescent spots. Lifespan: 5 to 7 years. Ideal pH: 6.5 to 7.5.</p>
+            <button class="cartbutton" onclick="addToCart('Black Berry Dollar', 850)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="clown.jpg" alt="Clown Loaches">
+            <p class="name" onclick="toggleDescription('desc4')">Clown Loaches 4</p>
+            <p class="price">Price: Rs. 600 each</p>
+            <p class="description" id="desc4" style="display: none;">Known for their orange and black stripes, Clown Loaches are lively and social. Lifespan: Up to 12 years. Ideal pH: 6.0 to 7.5.</p>
+            <button class="cartbutton" onclick="addToCart('Clown Loaches', 600)">Add to Cart</button>
+        </div>
+
+        <div class="fishdetails">
+            <img class="fishimg" src="frontosa.jpg" alt="Frontosa Burundi">
+            <p class="name" onclick="toggleDescription('desc5')">Frontosa Burundi 2-3</p>
+            <p class="price">Price: Rs. 1500 each</p>
+            <p class="description" id="desc5" style="display: none;">Known for its unique hump and striking appearance, the Frontosa Burundi thrives in large tanks. Lifespan: Up to 20 years. Ideal pH: 7.5 to 9.0.</p>
+            <button class="cartbutton" onclick="addToCart('Frontosa Burundi', 1500)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="cart-icon-container">
+        <span class="cart-icon" style="display: none;">0</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

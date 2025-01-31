@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            opacity: 1; /* Slight transparency */
+        }
+        .heading{
+            padding:30px;
+            border-radius: 20px;
+        }
+        .logo{
+            width: 600px;
+
+        }
+        /* Hero Section */
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.hero img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero button {
+    padding: 12px 25px;
+    background-color: #FF1053;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: white;
+    color: #FF1053;
+}
+
+/* Info Section */
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 50px 20px;
+
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.909);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+.info-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FF1053;
+}
+
+.info-box p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.contact a {
+    color: #FF1053;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+/* Dashboard Styling */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(to right,rgb(237, 113, 113), #FF1053,rgb(237, 113, 113)); /* Blue gradient */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 25px;
+    background-color: rgba(0, 0, 0, 0.15); /* Transparent black for depth */
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14.5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-button:hover {
+    background-color: #ffffff;
+    color: #6C6EA0;
+    transform: scale(0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSEIDON AQUATICS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <a class="nav-button" href="index.html"><i class="fa fa-home" style="font-size:24px"></i></a>
+        <a class="nav-button" href="fish.html">All</a>
+        <a class="nav-button" href="exotic.html">Exotic fish & Cichlids</a>
+        <a class="nav-button" href="monster.html">Monster fish</a>
+        <a class="nav-button" href="koi.html">Koi fish</a>
+        <a class="nav-button" href="lobster.html">Lobsters & Shrimps</a>
+        <a class="nav-button" href="about.html">About Us</a>
+        <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+    </div>
+    <p style="background-image: url('IMG_2030.PNG');"></p>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div >
+            <img class="logo" src="poseidon-logo.png.jpeg" alt="Poseidon Logo" />
+        <div class="heading">
+            <h1>Poseidon Aquatics</h1>
+            <p>Your One-Stop Destination for Exotic Aquatic Life</p>
+            <button onclick="scrollToContact()">Contact Us</button>
+        </div>
+        </div>
+    </div>
+
+    <!-- Info Section -->
+    <div class="info-section">
+        <div class="info-box">
+            <h3>Wide Variety</h3>
+            <p>We offer a diverse range of exotic fish, amphibians, and monster fish.</p>
+        </div>
+        <div class="info-box">
+            <h3>Expert Advice</h3>
+            <p>Get guidance on aquatic care and maintenance from our experts.</p>
+        </div>
+        <div class="info-box">
+            <h3>Quality Products</h3>
+            <p>All our products are ethically sourced and of the highest quality.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Call Us at: <a href="tel:+91 9962150198">+91 9962150198</a><br>
+            Customer Care: <a href="tel:+91 7353647326">+91 7353647326</a><br>
+            Email: <a href="mailto:Poseidonaquatics0@gmail.com">Poseidonaquatics0@gmail.com</a><br>
+            Address: Chennai, Tamil Nadu, India
+        </p>
+    </div>
+
+    <script>
+        // Smooth scroll to contact section
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

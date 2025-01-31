@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exotic Fish & Cichlids - Poseidon Aquatics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Additional styling for fish details */
+        .fishdetails {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px;
+            max-width: 300px;
+            text-align: center;
+            position: relative;
+        }
+
+        .fishimg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .fishname {
+            font-size: 18px;
+            color: #007BFF;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-bottom: 8px;
+        }
+
+        .description {
+            display: none;
+            font-size: 14px;
+            color: #333;
+            margin-top: 8px;
+        }
+
+        .cartbutton {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 8px;
+        }
+
+        .cartbutton:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="fishcontainer">
+        <div class="fishdetails">
+            <img class="fishimg" src="clown.jpg" alt="Demanson's Cichlid">
+            <p class="fishname" onclick="toggleDescription(this)">Demanson's Cichlid 3-4</p>
+            <p class="price">Price: Rs. 350 each</p>
+            <p class="description">African Cichlids are colorful, territorial fish native to African lakes like Lake Malawi. They thrive in stable, well-maintained tanks with slightly alkaline, hard water. Lifespan: 8 to 15 years.</p>
+            <button class="cartbutton" onclick="addToCart('Demanson\'s Cichlid', 350)">Add to Cart</button>
+        </div>
+
+        <div class="fishdetails">
+            <img class="fishimg" src="images/redspotted_severum.png" alt="Redspotted Severum">
+            <p class="fishname" onclick="toggleDescription(this)">Redspotted Severum 7</p>
+            <p class="price">Price: Rs. 1200 each</p>
+            <p class="description">The Redspotted Severum is a vibrant freshwater cichlid known for its bright green body and distinct red spots. Lifespan: 10 to 15 years. Ideal pH: 6.5 to 7.5.</p>
+            <button class="cartbutton" onclick="addToCart('Redspotted Severum', 1200)">Add to Cart</button>
+        </div>
+
+        <div class="fishdetails">
+            <img class="fishimg" src="images/black_berry_dollar.png" alt="Black Berry Dollar">
+            <p class="fishname" onclick="toggleDescription(this)">Black Berry Dollar 3-4</p>
+            <p class="price">Price: Rs. 850 each</p>
+            <p class="description">A striking freshwater fish with deep black body and metallic, iridescent spots. Lifespan: 5 to 7 years. Ideal pH: 6.5 to 7.5.</p>
+            <button class="cartbutton" onclick="addToCart('Black Berry Dollar', 850)">Add to Cart</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to toggle the description visibility
+        function toggleDescription(element) {
+            const description = element.nextElementSibling.nextElementSibling;
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+
+        // Example addToCart function
+        function addToCart(item, price) {
+            alert(${item} has been added to your cart for Rs. ${price}.);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poseidon Aquatics</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    @media (orientation: portrait) and (max-width:1500px) {
+        .hero-video {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 100%; /* Ensure it spans full width */
+    height: 270px; /* Let it take the natural height */
+    padding: 10px; /* Optional: Add some spacing */
+    box-sizing: border-box;
+}
+
+.hero-video video {
+    width: auto; /* Maintain the video’s natural width */
+    height: auto; /* Maintain the video’s natural height */
+    max-width: 100%; /* Prevent overflow */
+    max-height: 200vh; /* Ensures it doesn’t exceed screen height */
+    object-fit: contain; /* Keeps the aspect ratio intact */
+    border: 2px solid #ccc; /* Optional for styling */
+    align-self: flex-start;
+    border-radius: 8px;
+}
+
+
+    .side-menu{
+        display:flex;
+        flex-direction: column;
+        width:160px;
+        left: -160px;
+    }
+    .side-menu .nav-button {
+        width: 80%;
+        font-size: 10px; /* Smaller font size */
+        padding: 5px 10px; /* Reduced padding */
+        text-align: center;
+        margin: 5px 0; /* Reduced margin */
+    }
+
+    .menu-button {
+        margin-top: 0px;
+        font-size: 15px;
+        padding: 5px;
+        align-items: center;
+    }
+    .logotop{
+       width: 40px;
+       height:40px;
+       align-self:initial;
+       margin-right: 10px;
+    }
+    .heading1{
+        font-size:0px;
+        margin-left: 50px;
+        font-weight: 550;
+    }
+    .topred {
+        height: 60px; /* Reduce the height */
+        padding: 5px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Decrease font size for text inside */
+        display: flex;
+        align-items: center; /* Vertically center content */
+        justify-content: space-between;
+    }
+    .fishcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;    /* Vertical centering */
+        gap: 20px;              /* Space between items */
+        min-height: 20vh;      /* Full screen height */
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .fishdetails{
+        flex: 1 1 230px;
+        max-width: 250px;
+        height:230px;
+        justify-content: start;
+        margin-left: 25px;
+        margin-right:25px;
+    }
+    .fishimg{
+        height:100px;
+        width:200px;
+        margin-top:0px;
+    }
+    .name{
+        margin: 1px auto;
+    font-size: 9px;
+}
+.price{
+    margin: 1px auto;
+    font-size:12px;
+}
+.cartbutton{
+    margin: 1px auto;
+    font-size:10px;
+    padding: 1px 1px 0px 0px;
+}
+.cartbutton{
+        margin: 1px auto;
+        font-size:10px;
+        padding: 1px 1px 0px 0px;
+    }
+    .search-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        height:26px;
+        width: 40%;
+    }
+
+    .search-container input {
+        width: 70%;
+        padding: 4px;
+        font-size: 8px;
+    }
+
+    .search-container button {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+
+    .cart-icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cart-icon {
+        font-size: 14px;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    .side-menu {
+        display: flex;
+        flex-direction: column; /* Arrange buttons horizontally */
+        width: 170px;
+        left: -170px;
+        justify-content: space-around; /* Distribute the nav buttons evenly */
+    }
+
+    .side-menu .nav-button {
+        font-size: 8px; 
+        padding: 6px 12px;
+        margin: 1px 1px 1px 1px ;
+    }
+
+    .menu-button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .logotop {
+        width: 40px;
+        height: 40px;
+    }
+
+    .heading1 {
+        font-size: 14px;
+        margin-left: 70px;
+    }
+    .topred {
+        height: 65px;
+        padding: 10px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fishcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;    /* Vertical centering */
+        gap: 20px;              /* Space between items */
+        min-height: 100vh;      /* Full screen height */
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .fishdetails{
+        flex: 1 1 180px;
+        max-width: 180px;
+        height:200px;
+        justify-content: start;
+    }
+    .fishimg{
+        height:80px;
+        width:150px;
+        margin-top:0px;
+    }
+    .name{
+        margin: 1px auto;
+    font-size: 7px;
+}
+.price{
+    margin: 1px auto;
+    font-size:10px;
+}
+.cartbutton{
+    margin: 1px auto;
+    font-size:10px;
+    padding: 1px 1px 0px 0px;
+    width:130px;
+}
+.description{
+    font-size:5px;
+}
+}
+/* Responsive: Tablets in Horizontal Mode */
+@media screen and (mAX-width: 1300px) and (orientation: landscape) {
+    .fishcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;    /* Vertical centering */
+        gap: 20px;              /* Space between items */
+        min-height: 100vh;      /* Full screen height */
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .fishdetails{
+        flex: 1 1 250px;
+        max-width: 250px;
+        height:300px;
+        justify-content: start;
+    }
+    .fishimg{
+        height:150px;
+        width:200px;
+        margin-top:0px;
+    }
+    .name{
+        margin: 1px auto;
+        font-size: 10px;
+    }
+    .price{
+    margin: 1px auto;
+    font-size:15px;
+}
+.cartbutton{
+    margin: 1px auto;
+    font-size:15px;
+    padding: 1px 1px 0px 0px;
+    width:180px;
+}
+.description{
+    font-size:5px;
+}
+}
+
+/* Responsive: Laptops */
+@media screen and (min-width: 1200px) {
+    .fishcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;    /* Vertical centering */
+        gap: 20px;              /* Space between items */
+        min-height: 100vh;      /* Full screen height */
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .fishdetails{
+        flex: 1 1 300px;
+        max-width: 300px;
+        height:350px;
+        justify-content: start;
+    }
+    .fishimg{
+        height:180px;
+        width:230px;
+        margin-top:0px;
+    }
+    .name{
+        margin: 1px auto;
+        font-size: 16px;
+    }
+    .price{
+    margin: 2px auto;
+    font-size:23px;
+    }
+    .cartbutton{
+        margin: 1px auto;
+        font-size:20px;
+        padding: 2px 2px 0px 0px;
+        width:160px;
+    }
+.description{
+    font-size:12px;
+}   
+} 
+</style>
+</head>
+<body>
+      <!-- Menu Button -->
+      <button class="menu-button" id="menuButton" onclick="toggleMenu()">&#9776;</button>
+
+      <!-- Overlay -->
+      <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+  
+      <!-- Side Menu -->
+      <div class="side-menu" id="sideMenu">
+          <a class="nav-button" href="index.html">Home</a>
+          <a class="nav-button" href="fish.html">All Fish</a>
+          <a class="nav-button" href="exotic.html">Exotic Fish & Cichlids</a>
+          <a class="nav-button" href="monster.html">Monster Fish</a>
+          <a class="nav-button" href="koi.html">Koi Fish</a>
+          <a class="nav-button" href="lobster.html">Lobsters & Shrimps</a>
+          <a class="nav-button" href="about.html">About Us</a>
+          <a class="nav-button" href="cart.html">Cart</a>
+          <button onclick="toggleMode()" class="nav-button">Toggle Dark/Light Mode</button>
+      </div>
+
+    <div class="topred">
+        <h1 class="heading1">POSEIDON AQUATICS</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search fish..." onkeyup="searchFish()">
+            <button onclick="searchFish()"><i class="fa fa-search"></i></button>
+        </div>
+        <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart" style="font-size:24px;"></i></a>
+        <img class="logotop" src="poseidon-logo.png.jpeg" alt="Poseidon Aquatics Logo">
+    </div>
+    </div>
+    <!-- Video Section -->
+    <div class="hero-video">
+        <video autoplay muted loop>
+            <source src="IMG_2031.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="fishcontainer">
+        <div class="fishdetails">
+            <img class="fishimg" src="koi.jpg" alt="Koi Fish">
+            <p onclick="toggleDescription('desc1')" class="name">Milky White Veiltail Koi 10"</p>
+            <p class="price">Price: Rs. 800</p>
+            <p class="description" id="desc1" style="display: none;">The Milky White Koi Carp is a stunning, pure white koi with a glossy sheen and smooth, symmetrical fins. It grows up to 24-36 inches (60-90 cm) and can weigh up to 20 pounds (9 kg), with a lifespan of 20-30 years (or 40+ with excellent care). It thrives in water temperatures of 15-25°C, pH levels of 7.0-8.0, and requires a spacious, well-oxygenated pond at least 3 feet deep. Feed it a balanced diet of high-quality pellets, vegetables, and occasional protein treats for optimal growth and health.</p>
+            <button class="cartbutton" onclick="addToCart('Milky White Veiltail Koi 10', 800)">Add to Cart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>    

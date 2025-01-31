@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Poseidon Aquatics</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@media (max-width: 500px) {
+    .side-menu{
+        display:flex;
+        flex-direction: column;
+        width:160px;
+        left: -160px;
+    }
+    .side-menu .nav-button {
+        width: 80%;
+        font-size: 10px; /* Smaller font size */
+        padding: 5px 10px; /* Reduced padding */
+        text-align: center;
+        margin: 5px 0; /* Reduced margin */
+    }
+
+    .menu-button {
+        margin-top: 0px;
+        font-size: 15px;
+        padding: 7px;
+        align-items: center;
+    }
+    .logotop{
+       width: 40px;
+       height:40px;
+       align-self:initial;
+       margin-right: 10px;
+    }
+    .heading1{
+        font-size:13px;
+        margin-left: 70px;
+        font-weight: 550;
+    }
+    .topred {
+        height: 60px; /* Reduce the height */
+        padding: 5px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Decrease font size for text inside */
+        display: flex;
+        align-items: center; /* Vertically center content */
+        justify-content: space-between;
+    }
+    li{
+        font-size: 11px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 13px;
+    }
+    p{
+        font-size: 11px;
+    }
+    .cartbutton{
+        margin: 1px auto;
+        font-size:10px;
+        padding: 1px 1px 0px 0px;
+    }
+    .search-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        height:26px;
+        width: 40%;
+    }
+
+    .search-container input {
+        width: 70%;
+        padding: 4px;
+        font-size: 8px;
+    }
+
+    .search-container button {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+
+    .cart-icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cart-icon {
+        font-size: 14px;
+        width: 18px;
+        height: 18px;
+    }
+
+}
+</style>
+</head>
+<body>
+    <!-- Menu Button -->
+    <button class="menu-button" id="menuButton" onclick="toggleMenu()">&#9776;</button>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <a class="nav-button" href="index.html">Home</a>
+        <a class="nav-button" href="fish.html">All Fish</a>
+        <a class="nav-button" href="exotic.html">Exotic Fish & Cichlids</a>
+        <a class="nav-button" href="monster.html">Monster Fish</a>
+        <a class="nav-button" href="koi.html">Koi Fish</a>
+        <a class="nav-button" href="lobster.html">Lobsters & Shrimps</a>
+        <a class="nav-button" href="about.html">About Us</a>
+        <a class="nav-button" href="cart.html">Cart</a>
+    </div>
+    <div class="topred">
+        <h1 class="heading1">POSEIDON AQUATICS</h1>
+        <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart" style="font-size:24px;"></i></a>
+        <img class="logotop" src="poseidon-logo.png.jpeg" alt="Poseidon Aquatics Logo">
+    </div>
+    <div class="about-container">
+        <div class="terms-conditions">
+            <h2>Terms and Conditions</h2>
+            <ul>
+                <li>We operate solely online. In-person visits are not encouraged.</li>
+                <li>Payment methods: UPI and bank transfers only, non-refundable.</li>
+                <li>No cancellations are allowed once an order is placed.</li>
+                <li>Dead on Arrival (DOA) claims must be made within 1 hour of delivery with mandatory unboxing and tank-releasing videos.</li>
+                <li>Same-day delivery is available for Chennai and nearby areas; timely parcel pickup is required.</li>
+                <li>Live Arrival Guarantee is valid for 24 hours after delivery. Beyond this, fish health becomes the customer’s responsibility.</li>
+                <li>Advance payments are non-refundable and applicable only to selected fish stocks.</li>
+                <li>Shipping charges are non-refundable.</li>
+            </ul>
+        </div>
+
+        <div class="faq-section">
+            <h2>FAQs – DOA Claims and Fish Safety</h2>
+            <div class="faq-item">
+                <h3>What is the DOA (Dead on Arrival) policy at Poseidon Aquatics?</h3>
+                <p>If the fish arrive in poor condition or dead, you can file a DOA claim within 1 hour of delivery. Mandatory proof includes an unboxing video and a tank-releasing video.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Why are unboxing and tank-releasing videos mandatory?</h3>
+                <p>These videos help verify the fish’s condition and ensure proper acclimation procedures. Claims without these videos cannot be entertained.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How does Poseidon Aquatics ensure the safety of the fish during transit?</h3>
+                <p>We package live fish in oxygenated bags with proper insulation to maintain temperature and reduce stress.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What can I do to ensure the fish’s safety after delivery?</h3>
+                <ul>
+                    <li>Acclimate the fish slowly by floating the bag in the tank to equalize the temperature.</li>
+                    <li>Gradually mix tank water into the bag to help the fish adjust.</li>
+                    <li>Avoid sudden changes in water temperature, pH, or salinity.</li>
+                </ul>
+            </div>
+            <div class="faq-item">
+                <h3>What happens if the fish die after 24 hours?</h3>
+                <p>Once the 24-hour period has passed, the fish's health becomes the customer’s responsibility. Proper care and tank conditions are essential.</p>
+            </div>
+        </div>
+
+        <div class="promise-section">
+            <h2>Our Promise</h2>
+            <p>Proudly serving our customers, Poseidon Aquatics ensures every aquatic lifeform is handled with care and shipped under optimal conditions. Thank you for choosing us!</p>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p style="font-weight: 900;">&copy; 2025 Poseidon Aquatics. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSEIDON AQUATICS</title>
+    <link rel="stylesheet" href="styles.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    @media (orientation: portrait) {
+    .side-menu{
+        display:flex;
+        flex-direction: column;
+        width:160px;
+        left: -160px;
+    }
+    .side-menu .nav-button {
+        width: 80%;
+        font-size: 10px; /* Smaller font size */
+        padding: 5px 10px; /* Reduced padding */
+        text-align: center;
+        margin: 5px 0; /* Reduced margin */
+    }
+
+    .menu-button {
+        margin-top: 0px;
+        font-size: 15px;
+        padding: 5px;
+        align-items: center;
+    }
+    .logotop{
+       width: 40px;
+       height:40px;
+       align-self:initial;
+       margin-right: 10px;
+    }
+    .heading1{
+        font-size:0px;
+        margin-left: 50px;
+        font-weight: 550;
+    }
+    .topred {
+        height: 60px; /* Reduce the height */
+        padding: 5px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Decrease font size for text inside */
+        display: flex;
+        align-items: center; /* Vertically center content */
+        justify-content: space-between;
+    }
+    .fishcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;    /* Vertical centering */
+        gap: 20px;              /* Space between items */
+        min-height: 20vh;      /* Full screen height */
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .fishdetails{
+        flex: 1 1 230px;
+        max-width: 250px;
+        height:230px;
+        justify-content: start;
+        margin-left: 25px;
+        margin-right:25px;
+    }
+    .fishimg{
+        height:100px;
+        width:200px;
+        margin-top:0px;
+    }
+    .name{
+        margin: 1px auto;
+    font-size: 9px;
+}
+.price{
+    margin: 1px auto;
+    font-size:12px;
+}
+.cartbutton{
+    margin: 1px auto;
+    font-size:10px;
+    padding: 1px 1px 0px 0px;
+}
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    .side-menu {
+        display: flex;
+        flex-direction: column; /* Arrange buttons horizontally */
+        width: 170px;
+        left: -170px;
+        justify-content: space-around; /* Distribute the nav buttons evenly */
+    }
+
+    .side-menu .nav-button {
+        font-size: 8px; 
+        padding: 6px 12px;
+        margin: 1px 1px 1px 1px ;
+    }
+
+    .menu-button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .logotop {
+        width: 40px;
+        height: 40px;
+    }
+
+    .heading1 {
+        font-size: 14px;
+        margin-left: 70px;
+    }
+    .topred {
+        height: 65px;
+        padding: 10px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fishcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;    /* Vertical centering */
+        gap: 20px;              /* Space between items */
+        min-height: 100vh;      /* Full screen height */
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .fishdetails{
+        flex: 1 1 180px;
+        max-width: 180px;
+        height:200px;
+        justify-content: start;
+    }
+    .fishimg{
+        height:80px;
+        width:150px;
+        margin-top:0px;
+    }
+    .name{
+        margin: 1px auto;
+    font-size: 7px;
+}
+.price{
+    margin: 1px auto;
+    font-size:10px;
+}
+.cartbutton{
+    margin: 1px auto;
+    font-size:10px;
+    padding: 1px 1px 0px 0px;
+    width:130px;
+}
+.description{
+    font-size:5px;
+}
+.cartbutton{
+        margin: 1px auto;
+        font-size:10px;
+        padding: 1px 1px 0px 0px;
+    }
+    .search-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        height:26px;
+        width: 40%;
+    }
+
+    .search-container input {
+        width: 70%;
+        padding: 4px;
+        font-size: 8px;
+    }
+
+    .search-container button {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+
+    .cart-icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cart-icon {
+        font-size: 14px;
+        width: 18px;
+        height: 18px;
+    }
+}
+/* Responsive: Tablets in Horizontal Mode */
+@media screen and (mAX-width: 1300px) and (orientation: landscape) {
+    .fishcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;    /* Vertical centering */
+        gap: 20px;              /* Space between items */
+        min-height: 100vh;      /* Full screen height */
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .fishdetails{
+        flex: 1 1 250px;
+        max-width: 250px;
+        height:300px;
+        justify-content: start;
+    }
+    .fishimg{
+        height:150px;
+        width:200px;
+        margin-top:0px;
+    }
+    .name{
+        margin: 1px auto;
+        font-size: 10px;
+    }
+    .price{
+    margin: 1px auto;
+    font-size:15px;
+}
+.cartbutton{
+    margin: 1px auto;
+    font-size:15px;
+    padding: 1px 1px 0px 0px;
+    width:180px;
+}
+.description{
+    font-size:5px;
+}
+}
+
+/* Responsive: Laptops */
+@media screen and (min-width: 1200px) {
+    .fishcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Horizontal centering */
+        align-items: center;    /* Vertical centering */
+        gap: 20px;              /* Space between items */
+        min-height: 100vh;      /* Full screen height */
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .fishdetails{
+        flex: 1 1 300px;
+        max-width: 300px;
+        height:350px;
+        justify-content: start;
+    }
+    .fishimg{
+        height:180px;
+        width:230px;
+        margin-top:0px;
+    }
+    .name{
+        margin: 1px auto;
+        font-size: 16px;
+    }
+    .price{
+    margin: 2px auto;
+    font-size:23px;
+    }
+    .cartbutton{
+        margin: 1px auto;
+        font-size:20px;
+        padding: 2px 2px 0px 0px;
+        width:160px;
+    }
+.description{
+    font-size:12px;
+}   
+}
+</style>
+</head>
+<body>
+    <!-- Menu Button -->
+    <button class="menu-button" id="menuButton" onclick="toggleMenu()">&#9776;</button>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <a class="nav-button" href="index.html">Home</a>
+        <a class="nav-button" href="fish.html">All Fish</a>
+        <a class="nav-button" href="exotic.html">Exotic Fish & Cichlids</a>
+        <a class="nav-button" href="monster.html">Monster Fish</a>
+        <a class="nav-button" href="koi.html">Koi Fish</a>
+        <a class="nav-button" href="lobster.html">Lobsters & Shrimps</a>
+        <a class="nav-button" href="about.html">About Us</a>
+        <a class="nav-button" href="cart.html">Cart</a>
+    </div>
+    <div class="topred">
+        <h1 class="heading1">POSEIDON AQUATICS</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search fish..." onkeyup="searchFish()">
+            <button onclick="searchFish()"><i class="fa fa-search"></i></button>
+        </div>
+        <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart" style="font-size:25px;"></i></a>
+        <img class="logotop" src="poseidon-logo.png.jpeg" alt="Poseidon Aquatics Logo">
+    </div>
+    <div class="fishcontainer">
+        <div class="fishdetails">
+            <img class="fishimg" src="jaguarchichlid.jpg" alt="Jaguar chichlid">
+            <p class="name" onclick="toggleDescription('desc1')">Jaguar cichlid</p>
+            <p class="price">Price: Rs.2000</p>
+            <p class="description" id="desc1" style="display: none;"><b>Description:</b> The Jaguar Cichlid is a bold and aggressive freshwater fish known for its striking, jaguar-like spots and vibrant colors. It requires a large tank with plenty of space, hiding spots, and stable water conditions. Due to its territorial nature, it is best kept with other robust species.
+            <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water. 
+            <b>Size:</b> Can grow up to 14 inches (35 cm) in length. 
+            <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Jaguar chichlid',2000)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="aligatorgar.jpg" alt="Aligator gar">
+            <p class="name" onclick="toggleDescription('desc2')">Aligator gar 6-7"</p>
+            <p class="price">Price: Rs.850</p>
+            <p class="description" id="desc2" style="display: none;"><b>Description:</b> The Alligator Gar is a large, predatory fish known for its elongated body and alligator-like snout. It requires a very large tank with ample swimming space and secure water conditions. Due to its size and predatory nature, it is best kept in species-only tanks or with very robust tank mates.
+            <b>pH:</b>Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
+            <b>Size:</b> Can grow up to 10 feet (3 meters) in length.
+            <b>Lifespan:</b> Typically lives 35 to 50 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Aligator gar',850)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="buttekofferi.jpg" alt="Buttekofferi">
+            <p class="name" class="name" onclick="toggleDescription('desc3')">Buttekofferi 10"            </p>
+            <p class="description" id="desc3" style="display: none;"><b>Description:</b> The Buttekofferi is a peaceful and hardy freshwater cichlid known for its beautiful coloration, with shades of blue and orange. It thrives in well-maintained aquariums with plenty of hiding spots and a stable environment.
+            <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
+            <b>Size:</b> Can grow up to 6 to 8 inches (15 to 20 cm) in length
+            <b>Lifespan:</b> Typically lives 8 to 12 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Buttekofferi',850)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="floridagar.jpg" alt="Florida gar">
+            <p class="name" class="name" onclick="toggleDescription('desc4')">Florida gar 14" </p>
+            <p class="price">Price: Rs.2000</p>
+            <p class="description" id="desc4" style="display: none;"><b>Description:</b> The Florida Gar is a long, predatory fish known for its sleek body and sharp, elongated snout. It is an active swimmer that requires a large aquarium with plenty of swimming space and secure tank conditions.
+            <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
+            <b>Size:</b> Can grow up to 36 inches (90 cm) in length.
+            <b>Lifespan:</b> Typically lives 10 to 20 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Florida gar',2000)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="africanlungfish.jpg" alt="African lung fish">
+            <p class="name" class="name" onclick="toggleDescription('desc5')">African lung fish 1.5 feet </p>
+            <p class="price">Price: Rs.6500</p>
+            <p class="description" id="desc5" style="display: none;"><b>Description:</b> The African Lungfish is a unique, prehistoric fish known for its ability to breathe air and its eel-like body. It requires a large tank with low water levels and plenty of hiding spaces, as it is a solitary and slow-moving species.
+            <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
+            <b>Size:</b> Can grow up to 6 feet (180 cm) in length.
+            <b>Lifespan:</b> Typically lives 15 to 20 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('African lung fish',6500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="Tigeroscar.jpg" alt="Tiger oscar">
+            <p class="name" onclick="toggleDescription('desc6')">Tiger Oscar 10-11"</p>
+            <p class="price">Price: Rs.1200</p>
+            <p class="description" id="desc6" style="display: none;"><b>Description:</b> The Tiger Oscar is a popular and aggressive freshwater fish known for its striking black and orange striped pattern. It requires a large tank with plenty of space, hiding spots, and stable water conditions. Due to its territorial nature, it thrives in tanks with few or no tank mates.
+            <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+            <b>Size:</b> Can grow up to 14 inches (35 cm) in length.
+            <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Tiger oscar',1200)">Add to Cart</button>
+        </div>
+            <div class="fishdetails">
+                <img class="fishimg" src="Redsnooksplendida.jpg" alt="Red snook splendida">
+                <p class="name" onclick="toggleDescription('desc7')">Red snook splendida</p>
+                <p class="price">Price: Rs.800</p>
+                <p class="description" id="desc7" style="display: none;">
+                    <b>Description:</b> The Redsnook Splendida is a striking and predatory freshwater fish known for its vibrant colors and sleek body. It requires a large, well-maintained aquarium with plenty of space to swim.
+                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+                    <b>Size:</b> Can grow up to 24 inches (60 cm) in length.
+                </p>
+                <button class="cartbutton" onclick="addToCart('Red snook splendida',800)">Add to Cart</button>
+            </div>
+            <div class="fishdetails">
+                <img class="fishimg" src="Copperoscar.jpg" alt="Copper oscar">
+                <p class="name" onclick="toggleDescription('desc8')">Copper oscar 10-11"</p>
+                <p class="price">Price: Rs.1500</p>
+                <p class="description" id="desc8" style="display: none;">
+                    <b>Description:</b> The Copper Oscar is a beautiful and aggressive freshwater fish known for its copper-toned body and striking markings. It requires a large tank with ample space and hiding spots due to its territorial nature.
+                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+                    <b>Size:</b> Can grow up to 14 inches (35 cm) in length.
+                    <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+                </p>
+                <button class="cartbutton" onclick="addToCart('Copper oscar',1500)">Add to Cart</button>
+            </div>
+            <div class="fishdetails">
+                <img class="fishimg" src="AlbinoTigerOscar.jpg" alt="Albino Tiger Oscar">
+                <p class="name" onclick="toggleDescription('desc9')">Albino Tiger Oscar 10-11"</p>
+                <p class="price">Price: Rs.1500</p>
+                <p class="description" id="desc9" style="display: none;">
+                    <b>Description:</b> The Albino Tiger Oscar is a striking freshwater fish with vibrant orange and white markings. Known for its intelligent and territorial nature, it requires a large tank with plenty of space and hiding spots. It is an aggressive species that thrives with careful tank management.
+                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+                    <b>Size:</b> Can grow up to 14 inches (35 cm) in length.
+                    <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+                </p>
+                <button class="cartbutton" onclick="addToCart('Albino Tiger Oscar',1500)">Add to Cart</button>
+            </div>
+            <div class="fishdetails">
+                <img class="fishimg" src="FlameRedOscar.jpg" alt="Flame Red oscar">
+                <p class="name" onclick="toggleDescription('desc10')">Flame Red Oscar 10-11"</p>
+                <p class="price">Price: Rs.1500</p>
+                <p class="description" id="desc10" style="display: none;">
+                    <b>Description:</b> The Flame Red Oscar is a vibrant freshwater fish with brilliant red-orange coloration and distinctive black markings. Known for its aggressive and territorial behavior, it requires a large tank with ample space and hiding spots. It is an intelligent and active species, often interacting with its environment.
+                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+                    <b>Size:</b> Can grow up to 14 inches (35 cm) in length.
+                    <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+                </p>
+                <button class="cartbutton" onclick="addToCart('Flame Red oscar',1500)">Add to Cart</button>
+            </div>
+            <div class="fishdetails">
+                <img class="fishimg" src="YellowFlagtail.jpg" alt="Yellow Flagtail">
+                <p class="name" onclick="toggleDescription('desc11')">Yellow Flagtail 7-8"</p>
+                <p class="price">Price: Rs.2000</p>
+                <p class="description" id="desc11" style="display: none;">
+                    <b>Description:</b> A vibrant freshwater species known for its striking yellow tail and elongated body. It is an active and peaceful fish that requires a spacious tank with plenty of swimming space.
+                    <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
+                    <b>Size:</b> Can grow up to 10 inches (25 cm) in length.
+                </p>
+                <button class="cartbutton" onclick="addToCart('Yellow Flagtail',2000)">Add to Cart</button>
+            </div>
+            <div class="fishdetails">
+                <img class="fishimg" src="Ornatesenegal.jpg" alt="Ornate senegal">
+                <p class="name" onclick="toggleDescription('desc12')">Ornate senegal 3-4"</p>
+                <p class="price">Price: Rs.1500</p>
+                <p class="description" id="desc12" style="display: none;">
+                    <b>Description:</b> The Ornate Bichir is a prehistoric-looking fish with an elongated body and armored scales. It is a nocturnal and peaceful species that requires a spacious tank with plenty of hiding places.
+                    <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
+                    <b>Size:</b> Can grow up to 20 inches (50 cm) in length.
+                </p>
+                <button class="cartbutton" onclick="addToCart('Ornate senegal',1500)">Add to Cart</button>
+            </div>
+            <div class="fishdetails">
+                <img class="fishimg" src="PeacockbassAzul.jpg" alt="Peacock bass Azul">
+                <p class="name" onclick="toggleDescription('desc13')">Peacock bass Azul 4-5"</p>
+                <p class="price">Price: Rs.1000</p>
+                <p class="description" id="desc13" style="display: none;">
+                    <b>Description:</b> The Azul Peacock Bass is a vibrant and aggressive freshwater fish known for its striking blue and yellow coloration. It thrives in a spacious aquarium with clean, well-filtered water. The ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water conditions for optimal health and growth.
+                    <b>Size:</b> This fish can grow up to 24 inches (60 cm) in length.
+                </p>
+                <button class="cartbutton" onclick="addToCart('Peacock bass Azul',1000)">Add to Cart</button>
+            </div>
+            <div class="fishdetails">
+                <img class="fishimg" src="Goldenkelberi.jpg" alt="Golden kelberi">
+                <p class="name" onclick="toggleDescription('desc14')">Golden kelberi peacock bass 6"</p>
+                <p class="price">Price: Rs.1000</p>
+                <p class="description" id="desc14" style="display: none;">
+                    <b>Description:</b> The Golden Kelberi Peacock Bass is a stunning freshwater fish with vibrant golden-yellow hues and distinctive black markings. Known for its active and aggressive nature, it requires a large, well-maintained aquarium. The ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water for optimal health and vitality.
+                    <b>Size:</b> It can grow up to 24 inches (60 cm) in length.
+                </p>
+                <button class="cartbutton" onclick="addToCart('Golden kelberi peacock bass',1000)">Add to Cart</button>
+            </div>
+            <div class="fishdetails">
+                <img class="fishimg" src="AlbinoRedbelliedpacu.jpg" alt="Albino Red bellied pacu">
+                <p class="name" onclick="toggleDescription('desc15')">Albino Red bellied pacu 7"</p>
+                <p class="price">Price: Rs.800</p>
+                <p class="description" id="desc15" style="display: none;">
+                    <b>Description:</b> The Albino Red-Bellied Pacu is a peaceful freshwater fish with a striking pale body and vibrant red belly. It requires a spacious, well-maintained aquarium due to its large size and active nature.
+                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+                    <b>Size:</b> Can grow up to 30 inches (76 cm) in length.
+                </p>
+                <button class="cartbutton" onclick="addToCart('Albino Red bellied pacu',800)">Add to Cart</button>
+            </div>
+        </div>
+        
+                    <script src="script.js"></script>
+
+                    
+</body>
+</html>
