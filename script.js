@@ -236,7 +236,12 @@ document.addEventListener('DOMContentLoaded', () => {
     displayCart();
     updateCartIcon();
 });
-
+document.addEventListener("DOMContentLoaded", function () {
+    let video = document.querySelector("video");
+    let source = video.querySelector("source");
+    source.src = source.getAttribute("data-src");
+    video.load();
+});
 document.addEventListener("DOMContentLoaded", function () {
     const video = document.querySelector(".hero-video video");
 
