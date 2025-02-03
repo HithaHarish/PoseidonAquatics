@@ -1,7 +1,22 @@
-
 function toggleMode() {
-    document.body.classList.toggle("dark-mode"); // Toggle the dark-mode class
+    const body = document.body;
+    body.classList.toggle("dark-mode"); // Toggle dark mode
+
+    // Save user preference in local storage
+    if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
 }
+
+// Apply saved theme when the page loads
+window.onload = function () {
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+};
+
 function searchFish() {
     const input = document.getElementById('searchInput').value.toLowerCase();
     const fishDetails = document.querySelectorAll('.fishdetails');
