@@ -2,6 +2,15 @@
 function toggleMode() {
     document.body.classList.toggle("dark-mode"); // Toggle the dark-mode class
 }
+function searchFish() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const fishDetails = document.querySelectorAll('.fishdetails');
+
+    fishDetails.forEach(fish => {
+        const fishName = fish.querySelector('.name').textContent.toLowerCase();
+        fish.style.display = fishName.includes(input) ? "block" : "none";
+    });
+}
 // Function to add an item to the cart
 function addToCart(itemName, itemPrice) {
     const cart = JSON.parse(localStorage.getItem('cart')) || {}; // Retrieve cart from localStorage or initialize
