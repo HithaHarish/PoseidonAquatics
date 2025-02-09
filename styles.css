@@ -960,7 +960,7 @@ body {
     .cart-container {
         margin: 60px auto;
         padding: 20px;
-        width: 360px !important;
+        width: 85% !important;
         font-size: 12px;
         box-sizing: border-box;
     }
@@ -1311,6 +1311,7 @@ body {
     font-weight: bold;
     transition: background 0.3s ease;
     font-family: 'Poppins' ;
+    width:80px;
 }
 .cart-item .subcart{
     padding-left:20px;
@@ -1319,6 +1320,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    font-size: 9px;
 }
 
 .cart-summary {
