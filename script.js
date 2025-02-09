@@ -1,21 +1,31 @@
 function toggleMode() {
     const body = document.body;
+    const modeButton = document.getElementById("modeButton"); // Get the button element
+
     body.classList.toggle("dark-mode"); // Toggle dark mode
 
-    // Save user preference in local storage
     if (body.classList.contains("dark-mode")) {
         localStorage.setItem("theme", "dark");
+        modeButton.textContent = "Light Mode"; // Change button text
     } else {
         localStorage.setItem("theme", "light");
+        modeButton.textContent = "Dark Mode"; // Change button text
     }
 }
 
 // Apply saved theme when the page loads
 window.onload = function () {
+    const body = document.body;
+    const modeButton = document.getElementById("modeButton"); // Get the button
+
     if (localStorage.getItem("theme") === "dark") {
-        document.body.classList.add("dark-mode");
+        body.classList.add("dark-mode");
+        modeButton.textContent = "Light Mode"; // Set correct text on load
+    } else {
+        modeButton.textContent = "Dark Mode"; // Set correct text on load
     }
 };
+
 
 function searchFish() {
     const input = document.getElementById('searchInput').value.toLowerCase();
@@ -26,6 +36,7 @@ function searchFish() {
         fish.style.display = fishName.includes(input) ? "block" : "none";
     });
 }
+
 // Function to add an item to the cart
 function addToCart(itemName, itemPrice) {
     const cart = JSON.parse(localStorage.getItem('cart')) || {}; // Retrieve cart from localStorage or initialize
@@ -40,8 +51,7 @@ function addToCart(itemName, itemPrice) {
     // Save the updated cart back to localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
 
-    // Notify the user
-    alert(`${itemName} has been added to the cart!`);
+    alert('Added to cart successfully');
 
     // Update the cart icon
     updateCartIcon();
@@ -129,14 +139,18 @@ function displayCart() {
 
         cartHTML += `
             <div class="cart-item">
+                <div class="subcart">
                 <p><strong>${itemName}</strong></p>
-                <p>Price: Rs.${details.price}</p>
+                <p>Rs.${details.price} /pc</p>
+                </div>
+                <div class="subcart">
                 <p>
                     <button onclick="decreaseQuantity('${itemName}')">-</button>
                     ${details.quantity}
                     <button onclick="increaseQuantity('${itemName}')">+</button>
                 </p>
-                <p>Total: Rs.${itemTotal}</p>
+                <p>Rs.${itemTotal}</p>
+                </div>
                 <button class="remove-item" onclick="removeFromCart('${itemName}')">Remove</button>
             </div>
         `;
@@ -169,20 +183,6 @@ function navigateToWhatsApp() {
     const whatsappLink = `https://wa.me/919962150198?text=${encodedMessage}`;
     window.open(whatsappLink, '_blank');
 }
-function toggleMenu() {
-    const sideMenu = document.getElementById('sideMenu');
-    const overlay = document.getElementById('overlay');
-    const menuButton = document.getElementById('menuButton');
-    const isActive = sideMenu.classList.contains('active');
-
-    if (isActive) {
-        closeMenu();
-    } else {
-        sideMenu.classList.add('active');
-        overlay.classList.add('active');
-        menuButton.classList.add('hidden');
-    }
-}
 
 function toggleDescription(id) {
     const description = document.getElementById(id);
@@ -196,18 +196,38 @@ function toggleDescription(id) {
         fishContainer.style.height = ""; // Reset to default height
     }
 }
-
-
-
-// Close Side Menu
+// Close the side menu and show the menu button
 function closeMenu() {
     const sideMenu = document.getElementById('sideMenu');
     const overlay = document.getElementById('overlay');
-    const menuButton = document.getElementById('menuButton');
+    const menuButton = document.getElementById('menu-button');
     sideMenu.classList.remove('active');
     overlay.classList.remove('active');
-    menuButton.classList.remove('hidden');
+    menuButton.classList.remove('hidden'); // Reappear the button
 }
+
+// Toggle the side menu
+function toggleMenu() {
+    const sideMenu = document.getElementById('sideMenu');
+    const overlay = document.getElementById('overlay');
+    const menuButton = document.getElementById('menu-button');
+    const isActive = sideMenu.classList.contains('active');
+
+    if (isActive) {
+        closeMenu(); // Close the menu and show the button
+    } else {
+        sideMenu.classList.add('active');
+        overlay.classList.add('active');
+        menuButton.classList.add('hidden'); // Hide the button when menu opens
+    }
+}
+
+// Smooth scroll to the contact section
+function scrollToContact() {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+}
+
+
 // Smooth scroll to contact section
 function scrollToContact() {
     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
@@ -236,17 +256,3 @@ document.addEventListener('DOMContentLoaded', () => {
     displayCart();
     updateCartIcon();
 });
-document.addEventListener("DOMContentLoaded", function () {
-    let video = document.querySelector("video");
-    let source = video.querySelector("source");
-    source.src = source.getAttribute("data-src");
-    video.load();
-});
-document.addEventListener("DOMContentLoaded", function () {
-    const video = document.querySelector(".hero-video video");
-
-    if (video) {
-        video.playbackRate = 1.5; // Increase speed (1.5x normal speed)
-    }
-});
-
