@@ -1,104 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Poseidon Aquatics</title>
+    <title>POSEIDON AQUATICS</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-@media (max-width: 500px) {
-    .side-menu{
-        display:flex;
-        flex-direction: column;
-        width:160px;
-        left: -160px;
-    }
-    .side-menu .nav-button {
-        width: 80%;
-        font-size: 10px; /* Smaller font size */
-        padding: 5px 10px; /* Reduced padding */
-        text-align: center;
-        margin: 5px 0; /* Reduced margin */
-    }
-
-    .menu-button {
-        margin-top: 0px;
-        font-size: 15px;
-        padding: 7px;
-        align-items: center;
-    }
-    .logotop{
-       width: 40px;
-       height:40px;
-       align-self:initial;
-       margin-right: 10px;
-    }
-    .heading1{
-        font-size:13px;
-        margin-left: 70px;
-        font-weight: 550;
-    }
-    .topred {
-        height: 60px; /* Reduce the height */
-        padding: 5px; /* Adjust padding for smaller screens */
-        font-size: 12px; /* Decrease font size for text inside */
-        display: flex;
-        align-items: center; /* Vertically center content */
-        justify-content: space-between;
-    }
-    li{
-        font-size: 11px;
-    }
-    h2{
-        font-size: 18px;
-    }
-    h3{
-        font-size: 13px;
-    }
-    p{
-        font-size: 11px;
-    }
-    .cartbutton{
-        margin: 1px auto;
-        font-size:10px;
-        padding: 1px 1px 0px 0px;
-    }
-    .search-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1px;
-        height:26px;
-        width: 40%;
-    }
-
-    .search-container input {
-        width: 70%;
-        padding: 4px;
-        font-size: 8px;
-    }
-
-    .search-container button {
-        padding: 4px 6px;
-        font-size: 12px;
-    }
-
-    .cart-icon-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cart-icon {
-        font-size: 14px;
-        width: 18px;
-        height: 18px;
-    }
-
-}
 </style>
 </head>
 <body>
@@ -118,12 +30,14 @@
         <a class="nav-button" href="lobster.html">Lobsters & Shrimps</a>
         <a class="nav-button" href="about.html">About Us</a>
         <a class="nav-button" href="cart.html">Cart</a>
-        <button onclick="toggleMode()" class="nav-button">Toggle Dark/Light Mode</button>
+        <button id="modeButton" onclick="toggleMode()">Dark Mode</button>
     </div>
-    <div class="topred">
+    <div class="topred" >
         <h1 class="heading1">POSEIDON AQUATICS</h1>
-        <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart" style="font-size:24px;"></i></a>
-        <img class="logotop" src="poseidon-logo.png.jpeg" alt="Poseidon Aquatics Logo">
+        <div class="subtopred">
+            <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart" ></i></a>
+            <img class="logotop" src="poseidon-logo.png.jpeg" alt="Poseidon Aquatics Logo">
+        </div>
     </div>
     <div class="about-container">
         <div class="terms-conditions">
