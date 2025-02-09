@@ -7,127 +7,6 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    /* General cart styles */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      box-sizing: border-box;
-    }
-
-    .cart-container {
-      margin: 0 auto;
-      max-width: 800px;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-      box-sizing: border-box;
-    }
-
-    .cart-items {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .cart-item {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      background: #f9f9f9;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 5px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .cart-item div {
-      margin: 5px;
-      text-align: center;
-    }
-
-    .cart-item button {
-      padding: 5px 10px;
-      margin: 0 5px;
-      border: none;
-      border-radius: 5px;
-      background: #007bff;
-      color: #fff;
-      cursor: pointer;
-      width:25%;
-    }
-
-    .cart-item button:hover {
-      background: #0056b3;
-    }
-
-    .cart-summary {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .cart-summary p {
-      font-size: 18px;
-      margin: 5px 0;
-    }
-
-    .checkout-button {
-      padding: 10px 20px;
-      background: #28a745;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    .checkout-button:hover {
-      background: #218838;
-    }
-
-    /* Responsive styles */
-    @media (max-width: 768px) {
-      .cart-item {
-        flex-direction: column;
-      }
-
-      .cart-item button {
-        padding: 8px;
-      }
-
-      .checkout-button {
-        font-size: 14px;
-        padding: 10px;
-      }
-      .side-menu{
-        display:flex;
-        flex-direction: column;
-        width:160px;
-        left: -160px;
-    }
-    .side-menu .nav-button {
-        width: 80%;
-        font-size: 10px; /* Smaller font size */
-        padding: 5px 10px; /* Reduced padding */
-        text-align: center;
-        margin: 5px 0; /* Reduced margin */
-    }
-    .heading1{
-        font-size:13px;
-        margin-left: 70px;
-        font-weight: 550;
-    }
-
-    .menu-button {
-        margin-top: 0px;
-        font-size: 15px;
-        padding: 5px;
-        align-items: center;
-    }
-    }
-  </style>
 </head>
 <body>
 <!-- Menu Button -->
@@ -147,10 +26,10 @@
     <a class="nav-button" href="lobster.html">Lobsters & Shrimps</a>
     <a class="nav-button" href="about.html">About Us</a>
     <a class="nav-button" href="cart.html">Cart</a>
-    <button onclick="toggleMode()" class="nav-button">Toggle Dark/Light Mode</button>
+    <button id="modeButton" onclick="toggleMode()">Dark Mode</button>
 </div>
 
-<div class="topred">
+<div class="topred" style="margin-bottom: 20px;">
   <h1 class="heading1">POSEIDON AQUATICS</h1>
   <img class="logotop" src="poseidon-logo.png.jpeg" alt="Poseidon Aquatics Logo">
 </div>
