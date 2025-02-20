@@ -256,9 +256,5 @@ document.addEventListener('DOMContentLoaded', () => {
     displayCart();
     updateCartIcon();
 });
-function clearCart() {
-    localStorage.removeItem("cart");
-    console.log("Cart has been cleared.");
-}
-document.addEventListener("DOMContentLoaded", clearCart);
+
 
