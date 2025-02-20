@@ -256,5 +256,3 @@ document.addEventListener('DOMContentLoaded', () => {
     displayCart();
     updateCartIcon();
 });
-
-
