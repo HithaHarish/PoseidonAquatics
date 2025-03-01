@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +9,36 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    @media (orientation: portrait) and (max-width:1500px) {
-        .heading1{
-            font-size:0px;
-            margin-left: 50px;
-            font-weight: 550;
-    }
-}
-
-</style>
+    <style>
+        @media (orientation: portrait) and (max-width: 1500px) {
+            .heading1 {
+                font-size: 0px;
+                margin-left: 50px;
+                font-weight: 550;
+            }
+        }
+    </style>
 </head>
-<body>
-      <!-- Menu Button -->
-      <button class="menu-button" id="menuButton" onclick="toggleMenu()">&#9776;</button>
 
-      <!-- Overlay -->
-      <div class="overlay" id="overlay" onclick="closeMenu()"></div>
-  
-      <!-- Side Menu -->
-      <div class="side-menu" id="sideMenu">
-          <a class="nav-button" href="index.html">Home</a>
-          <a class="nav-button" href="fish.html">All Fish</a>
-          <a class="nav-button" href="exotic.html">Exotic Fish & Cichlids</a>
-          <a class="nav-button" href="monster.html">Monster Fish</a>
-          <a class="nav-button" href="koi.html">Koi Fish</a>
-          <a class="nav-button" href="lobster.html">Lobsters & Shrimps</a>
-          <a class="nav-button" href="about.html">About Us</a>
-          <a class="nav-button" href="cart.html">Cart</a>
-          <button id="modeButton" onclick="toggleMode()">Dark Mode</button>
-      </div>
+<body>
+    <!-- Menu Button -->
+    <button class="menu-button" id="menuButton" onclick="toggleMenu()">&#9776;</button>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <a class="nav-button" href="index.html">Home</a>
+        <a class="nav-button" href="fish.html">All Fish</a>
+        <a class="nav-button" href="exotic.html">Exotic Fish & Cichlids</a>
+        <a class="nav-button" href="monster.html">Monster Fish</a>
+        <a class="nav-button" href="koi.html">Koi Fish</a>
+        <a class="nav-button" href="lobster.html">Lobsters & Shrimps</a>
+        <a class="nav-button" href="about.html">About Us</a>
+        <a class="nav-button" href="cart.html">Cart</a>
+        <button id="modeButton" onclick="toggleMode()">Dark Mode</button>
+    </div>
 
     <div class="topred">
         <h1 class="heading1">POSEIDON AQUATICS</h1>
@@ -47,11 +47,11 @@
             <button onclick="searchFish()"><i class="fa fa-search"></i></button>
         </div>
         <div class="subtopred">
-            <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart" ></i></a>
+            <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart"></i></a>
             <img class="logotop" src="poseidon-logo.png.jpeg" alt="Poseidon Aquatics Logo">
         </div>
     </div>
-   
+
     <!-- Video Section -->
     <div class="hero-video">
         <video autoplay muted loop playsinline>
@@ -59,33 +59,33 @@
             Your browser does not support the video tag.
         </video>
     </div>
-    <div class="fishcontainer" style="margin-top:10px;">
+    <div class="fishcontainer" style="margin-top: 10px;">
         <div class="fishdetails">
             <img class="fishimg" src="milkwhitekoi.jpg" alt="Koi Fish">
-            <p onclick="toggleDescription('desc1')" class="name">Milky White Veiltail Koi 10"</p>
-            <p class="price">Price: Rs. 1200</p>
-            <p class="description" id="desc1" style="display: none;">The Milky White Koi Carp is a stunning, pure white koi with a glossy sheen and smooth, symmetrical fins. It grows up to 24-36 inches (60-90 cm) and can weigh up to 20 pounds (9 kg), with a lifespan of 20-30 years (or 40+ with excellent care). It thrives in water temperatures of 15-25°C, pH levels of 7.0-8.0, and requires a spacious, well-oxygenated pond at least 3 feet deep. Feed it a balanced diet of high-quality pellets, vegetables, and occasional protein treats for optimal growth and health.</p>
+            <p onclick="toggleDescription('desc01')" class="name">Milky White Veiltail Koi 10"</p>
+            <p class="price">Price: ₹1,200.00</p>
+            <p class="description" id="desc01" style="display: none;">The Milky White Koi Carp is a stunning, pure white koi with a glossy sheen and smooth, symmetrical fins. It grows up to 24-36 inches (60-90 cm) and can weigh up to 20 pounds (9 kg), with a lifespan of 20-30 years (or 40+ with excellent care). It thrives in water temperatures of 15-25°C, pH levels of 7.0-8.0, and requires a spacious, well-oxygenated pond at least 3 feet deep. Feed it a balanced diet of high-quality pellets, vegetables, and occasional protein treats for optimal growth and health.</p>
             <button class="cartbutton" onclick="addToCart('Milky White Veiltail Koi 10', 1200)">Add to Cart</button>
         </div>
         <div class="fishdetails">
             <img class="fishimg" src="Matsubhakoi.png" alt="Koi Fish">
-            <p onclick="toggleDescription('desc2')" class="name">Matsubha 7"</p>
-            <p class="price">Price: Rs. 800</p>
-            <p class="description" id="desc2" style="display: none;">The Matsubha is a stunning koi variety that boasts a pure white color and a glossy sheen. Its fins are smooth and symmetrical, adding to its beauty. This impressive fish can grow up to 24-36 inches in length and weigh up to 20 pounds. With proper care, the Matsubha can live for 20-30 years or even 40+ years. To thrive, the Matsubha requires water temperatures between 15-25°C and pH levels of 7.0-8.0. It needs a spacious, well-oxygenated pond with a minimum depth of 3 feet. A balanced diet of high-quality pellets, vegetables, and occasional protein treats is essential for the Matsubha's optimal growth and health.</p>
+            <p onclick="toggleDescription('desc02')" class="name">Matsubha 7"</p>
+            <p class="price">Price: ₹800.00</p>
+            <p class="description" id="desc02" style="display: none;">The Matsubha is a stunning koi variety that boasts a pure white color and a glossy sheen. Its fins are smooth and symmetrical, adding to its beauty. This impressive fish can grow up to 24-36 inches in length and weigh up to 20 pounds. With proper care, the Matsubha can live for 20-30 years or even 40+ years. To thrive, the Matsubha requires water temperatures between 15-25°C and pH levels of 7.0-8.0. It needs a spacious, well-oxygenated pond with a minimum depth of 3 feet. A balanced diet of high-quality pellets, vegetables, and occasional protein treats is essential for the Matsubha's optimal growth and health.</p>
             <button class="cartbutton" onclick="addToCart('Matsubha 7', 800)">Add to Cart</button>
         </div>
         <div class="fishdetails">
             <img class="fishimg" src="Hariwakekoi.png" alt="Koi Fish">
-            <p onclick="toggleDescription('desc3')" class="name">Hariwake 10"</p>
-            <p class="price">Price: Rs. 1600</p>
-            <p class="description" id="desc3" style="display: none;">The Hariwake is a stunning koi variety with a pure white coloration and glossy sheen. Its smooth, symmetrical fins add to its beauty. This koi grows up to 24-36 inches (60-90 cm) in length and can weigh up to 20 pounds (9 kg). With proper care, it can live for 20-30 years, or even 40+ years in ideal conditions. To thrive, the Hariwake requires water temperatures between 15-25°C and pH levels of 7.0-8.0. It needs a spacious, well-oxygenated pond with a minimum depth of 3 feet. A balanced diet of high-quality pellets, vegetables, and occasional protein treats is essential for its optimal growth and health.</p>
-            <button class="cartbutton" onclick="addToCart('Hariwake 10',1600)">Add to Cart</button>
+            <p onclick="toggleDescription('desc03')" class="name">Hariwake 10"</p>
+            <p class="price">Price: ₹1,600.00</p>
+            <p class="description" id="desc03" style="display: none;">The Hariwake is a stunning koi variety with a pure white coloration and glossy sheen. Its smooth, symmetrical fins add to its beauty. This koi grows up to 24-36 inches (60-90 cm) in length and can weigh up to 20 pounds (9 kg). With proper care, it can live for 20-30 years, or even 40+ years in ideal conditions. To thrive, the Hariwake requires water temperatures between 15-25°C and pH levels of 7.0-8.0. It needs a spacious, well-oxygenated pond with a minimum depth of 3 feet. A balanced diet of high-quality pellets, vegetables, and occasional protein treats is essential for its optimal growth and health.</p>
+            <button class="cartbutton" onclick="addToCart('Hariwake 10', 1600)">Add to Cart</button>
         </div>
         <div class="fishdetails">
             <img class="fishimg" src="utusuriandsanke.png" alt="Utusuri and Sanke Koi">
-            <p class="name" onclick="toggleDescription('desc38')">Utusuri and Sanke 10"</p>
-            <p class="price">Price: Rs. 1,800</p>
-            <p class="description" id="desc38" style="display: none;">
+            <p class="name" onclick="toggleDescription('desc04')">Utusuri and Sanke 10"</p>
+            <p class="price">Price: ₹1,800.00</p>
+            <p class="description" id="desc04" style="display: none;">
                 <b>Description:</b> The Utusuri and Sanke Koi are highly desirable for their intricate patterns and vibrant colors. Known for their beauty and grace, these koi make stunning additions to any pond or aquarium. They thrive in well-maintained water conditions and enjoy a diet rich in high-quality koi pellets.
                 <b>pH:</b> Ideal pH range is 6.5 to 7.5.<br>
                 <b>Size:</b> Can grow over 12 inches (30 cm) at maturity.<br>
@@ -93,12 +93,12 @@
             </p>
             <button class="cartbutton" onclick="addToCart('Utusuri and Sanke', 1800)">Add to Cart</button>
         </div>
-        
+
         <div class="fishdetails">
             <img class="fishimg" src="whiteogonandghostkoi.png" alt="White Ogon and Ghost Koi">
-            <p class="name" onclick="toggleDescription('desc39')">White Ogon and Ghost Koi 10"</p>
-            <p class="price">Price: Rs. 2,200</p>
-            <p class="description" id="desc39" style="display: none;">
+            <p class="name" onclick="toggleDescription('desc05')">White Ogon and Ghost Koi 10"</p>
+            <p class="price">Price: ₹2,200.00</p>
+            <p class="description" id="desc05" style="display: none;">
                 <b>Description:</b> The White Ogon and Ghost Koi are distinguished by their stunning white bodies and unique markings. They are calm and peaceful fish that are best kept in larger ponds. These koi bring elegance and serenity to any aquatic environment.
                 <b>pH:</b> Ideal pH range is 6.5 to 7.5.<br>
                 <b>Size:</b> Can grow to about 12 inches (30 cm) when fully grown.<br>
@@ -106,12 +106,12 @@
             </p>
             <button class="cartbutton" onclick="addToCart('White Ogon and Ghost Koi', 2200)">Add to Cart</button>
         </div>
-        
+
         <div class="fishdetails">
             <img class="fishimg" src="metallickoi.png" alt="Metallic Koi">
-            <p class="name" onclick="toggleDescription('desc40')">Metallic Koi 7-8"</p>
-            <p class="price">Price: Rs. 1,200</p>
-            <p class="description" id="desc40" style="display: none;">
+            <p class="name" onclick="toggleDescription('desc06')">Metallic Koi 7-8"</p>
+            <p class="price">Price: ₹1,200.00</p>
+            <p class="description" id="desc06" style="display: none;">
                 <b>Description:</b> The Metallic Koi are admired for their beautiful shimmering scales and vivid colors. They are hardy fish that thrive in a variety of conditions and are well-suited for both koi ponds and aquariums. These koi love to explore their environment and are often quite social.
                 <b>pH:</b> Ideal pH range is 6.5 to 7.5.<br>
                 <b>Size:</b> Generally grow to about 12-14 inches (30-35 cm) at full maturity.<br>
@@ -119,25 +119,25 @@
             </p>
             <button class="cartbutton" onclick="addToCart('Metallic Koi', 1200)">Add to Cart</button>
         </div>
-        
+
         <div class="fishdetails">
             <img class="fishimg" src="yellowogon.png" alt="Yellow Ogon Koi">
-            <p class="name" onclick="toggleDescription('desc41')">Yellow Ogon 8-10"</p>
-            <p class="price">Price: Rs. 1,600</p>
-            <p class="description" id="desc41" style="display: none;">
-                <b>Description:</b> The Yellow Ogon Koi is cherished for its stunning yellow coloration, which brightens any pond or aquarium. These fish are relatively easy to care for and adapt well to a variety of water conditions. They thrive in a well-maintained environment with plenty of space to swim.
+            <p class="name" onclick="toggleDescription('desc07')">Yellow Ogon 8-10"</p>
+            <p class="price">Price: ₹1,600.00</p>
+            <p class="description" id="desc07" style="display: none;">
+                <b>Description:</b> The Yellow Ogon Koi is cherished for its stunning yellow coloration, which brightens any pond or aquarium. These fish are relatively easy to care for and adapt well to a variety of water conditions. They thrive in a well-maintained environment with stable water conditions.
                 <b>pH:</b> Ideal pH range is 6.5 to 7.5.<br>
                 <b>Size:</b> Can reach lengths of 12-14 inches (30-35 cm) at maturity.<br>
                 <b>Lifespan:</b> Generally lives for 15-20 years with proper care.
             </p>
             <button class="cartbutton" onclick="addToCart('Yellow Ogon', 1600)">Add to Cart</button>
         </div>
-        
+
         <div class="fishdetails">
             <img class="fishimg" src="metallickoibig.png" alt="Metallic Koi">
-            <p class="name" onclick="toggleDescription('desc42')">Metallic Koi 8"</p>
-            <p class="price">Price: Rs. 1,500</p>
-            <p class="description" id="desc42" style="display: none;">
+            <p class="name" onclick="toggleDescription('desc08')">Metallic Koi 8"</p>
+            <p class="price">Price: ₹1,500.00</p>
+            <p class="description" id="desc08" style="display: none;">
                 <b>Description:</b> The 8-inch Metallic Koi are known for their vibrant colors and metallic sheen. They are easy to manage and thrive in various aquatic environments. These koi are perfect for both beginners and experienced hobbyists.
                 <b>pH:</b> Ideal pH range is 6.5 to 7.5.<br>
                 <b>Size:</b> Typically grow to about 12-14 inches (30-35 cm) at maturity.<br>
@@ -145,12 +145,12 @@
             </p>
             <button class="cartbutton" onclick="addToCart('Metallic Koi 8', 1500)">Add to Cart</button>
         </div>
-        
+
         <div class="fishdetails">
             <img class="fishimg" src="goromokoi.png" alt="Goromo Koi">
-            <p class="name" onclick="toggleDescription('desc43')">Goromo Koi 10-12"</p>
-            <p class="price">Price: Rs. 2,000</p>
-            <p class="description" id="desc43" style="display: none;">
+            <p class="name" onclick="toggleDescription('desc09')">Goromo Koi 10-12"</p>
+            <p class="price">Price: ₹2,000.00</p>
+            <p class="description" id="desc09" style="display: none;">
                 <b>Description:</b> The Goromo Koi is a stunning variety known for its striking colors and patterns. These fish are graceful swimmers and make a wonderful addition to any pond community. They require a well-maintained environment with stable water conditions.
                 <b>pH:</b> Ideal pH range is 6.5 to 7.5.<br>
                 <b>Size:</b> Typically grows to about 12-14 inches (30-35 cm) when fully mature.<br>
@@ -158,12 +158,12 @@
             </p>
             <button class="cartbutton" onclick="addToCart('Goromo Koi', 2000)">Add to Cart</button>
         </div>
-        
+
         <div class="fishdetails">
             <img class="fishimg" src="orangesushi.png" alt="Orange Sushi Koi">
-            <p class="name" onclick="toggleDescription('desc44')">Orange Sushi 8-10"</p>
-            <p class="price">Price: Rs. 1,800</p>
-            <p class="description" id="desc44" style="display: none;">
+            <p class="name" onclick="toggleDescription('desc10')">Orange Sushi 8-10"</p>
+            <p class="price">Price: ₹1,800.00</p>
+            <p class="description" id="desc10" style="display: none;">
                 <b>Description:</b> The Orange Sushi Koi is celebrated for its vibrant orange hue and unique coloration. These koi are peaceful and social, often seen swimming together in groups. They thrive in clean, well-oxygenated water.
                 <b>pH:</b> Ideal pH range is 6.5 to 7.5.<br>
                 <b>Size:</b> Typically grows to about 12 inches (30 cm) when fully matured.<br>
@@ -171,12 +171,12 @@
             </p>
             <button class="cartbutton" onclick="addToCart('Orange Sushi', 1800)">Add to Cart</button>
         </div>
-        
+
         <div class="fishdetails">
             <img class="fishimg" src="kobuto.png" alt="Kobuto Veiltail Koi">
-            <p class="name" onclick="toggleDescription('desc45')">Kobuto Veiltail Koi 8-10"</p>
-            <p class="price">Price: Rs. 1,500</p>
-            <p class="description" id="desc45" style="display: none;">
+            <p class="name" onclick="toggleDescription('desc11')">Kobuto Veiltail Koi 8-10"</p>
+            <p class="price">Price: ₹1,500.00</p>
+            <p class="description" id="desc11" style="display: none;">
                 <b>Description:</b> The Kobuto Veiltail Koi is known for its elegant flowing fins and vibrant colors. They are gentle swimmers and typically do well in a community setting. Well-suited for larger ponds and aquariums, these fish thrive in stable water conditions.
                 <b>pH:</b> Ideal pH range is 6.5 to 7.5.<br>
                 <b>Size:</b> Generally reaches lengths of 10-12 inches (25-30 cm) as adults.<br>
@@ -184,8 +184,9 @@
             </p>
             <button class="cartbutton" onclick="addToCart('Kobuto Veiltail Koi', 1500)">Add to Cart</button>
         </div>
-
+        
     </div>
     <script src="script.js"></script>
 </body>
-</html>    
+
+</html>
