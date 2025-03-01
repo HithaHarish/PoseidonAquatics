@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    @media (orientation: portrait) {
-    .heading1{
-        font-size:0px;
-        margin-left: 50px;
-        font-weight: 550;
-    }
-}
-</style>
+    <style>
+        @media (orientation: portrait) {
+            .heading1 {
+                font-size: 0px;
+                margin-left: 50px;
+                font-weight: 550;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Menu Button -->
@@ -45,498 +45,544 @@
             <button onclick="searchFish()"><i class="fa fa-search"></i></button>
         </div>
         <div class="subtopred">
-            <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart" ></i></a>
+            <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart"></i></a>
             <img class="logotop" src="poseidon-logo.png.jpeg" alt="Poseidon Aquatics Logo">
         </div>
     </div>
     <div class="fishcontainer">
         <div class="fishdetails">
-            <img class="fishimg" src="jaguarchichlid.jpg" alt="Jaguar chichlid">
-            <p class="name" onclick="toggleDescription('desc1')">Jaguar cichlid</p>
-            <p class="price">Price: Rs.2000</p>
-            <p class="description" id="desc1" style="display: none;"><b>Description:</b> The Jaguar Cichlid is a bold and aggressive freshwater fish known for its striking, jaguar-like spots and vibrant colors. It requires a large tank with plenty of space, hiding spots, and stable water conditions. Due to its territorial nature, it is best kept with other robust species.
-            <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water. 
-            <b>Size:</b> Can grow up to 14 inches (35 cm) in length. 
-            <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+            <img class="fishimg" src="jaguarchichlid.jpg" alt="Jaguar Chichlid">
+            <p class="name" onclick="toggleDescription('desc01')">Jaguar Cichlid</p>
+            <p class="price">Price: ₹2,000.00</p>
+            <p class="description" id="desc01" style="display: none;"><b>Description:</b> The Jaguar Cichlid is a bold and aggressive freshwater fish known for its striking, jaguar-like spots and vibrant colors. It requires a large tank with plenty of space, hiding spots, and stable water conditions. Due to its territorial nature, it is best kept with other robust species.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water. 
+                <b>Size:</b> Can grow up to 14 inches (35 cm) in length. 
+                <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
             </p>
-            <button class="cartbutton" onclick="addToCart('Jaguar chichlid',2000)">Add to Cart</button>
+            <button class="cartbutton" onclick="addToCart('Jaguar Cichlid', 2000)">Add to Cart</button>
         </div>
         <div class="fishdetails">
-            <img class="fishimg" src="aligatorgar.jpg" alt="Aligator gar">
-            <p class="name" onclick="toggleDescription('desc2')">Aligator gar 6-7"</p>
-            <p class="price">Price: Rs.850</p>
-            <p class="description" id="desc2" style="display: none;"><b>Description:</b> The Alligator Gar is a large, predatory fish known for its elongated body and alligator-like snout. It requires a very large tank with ample swimming space and secure water conditions. Due to its size and predatory nature, it is best kept in species-only tanks or with very robust tank mates.
-            <b>pH:</b>Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
-            <b>Size:</b> Can grow up to 10 feet (3 meters) in length.
-            <b>Lifespan:</b> Typically lives 35 to 50 years with proper care.
+            <img class="fishimg" src="aligatorgar.jpg" alt="Alligator Gar">
+            <p class="name" onclick="toggleDescription('desc02')">Alligator Gar 6-7"</p>
+            <p class="price">Price: ₹850.00</p>
+            <p class="description" id="desc02" style="display: none;"><b>Description:</b> The Alligator Gar is a large, predatory fish known for its elongated body and alligator-like snout. It requires a very large tank with ample swimming space and secure water conditions. Due to its size and predatory nature, it is best kept in species-only tanks or with very robust tank mates.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 10 feet (3 meters) in length.
+                <b>Lifespan:</b> Typically lives 35 to 50 years with proper care.
             </p>
-            <button class="cartbutton" onclick="addToCart('Aligator gar',850)">Add to Cart</button>
+            <button class="cartbutton" onclick="addToCart('Alligator Gar', 850)">Add to Cart</button>
         </div>
         <div class="fishdetails">
             <img class="fishimg" src="buttekofferi.jpg" alt="Buttekofferi">
-            <p class="name" class="name" onclick="toggleDescription('desc3')">Buttekofferi 10" </p>
-            <p class="price">Price: Rs.850</p>
-            <p class="description" id="desc3" style="display: none;"><b>Description:</b> The Buttekofferi is a peaceful and hardy freshwater cichlid known for its beautiful coloration, with shades of blue and orange. It thrives in well-maintained aquariums with plenty of hiding spots and a stable environment.
-            <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
-            <b>Size:</b> Can grow up to 6 to 8 inches (15 to 20 cm) in length
-            <b>Lifespan:</b> Typically lives 8 to 12 years with proper care.
+            <p class="name" onclick="toggleDescription('desc03')">Buttekofferi 10"</p>
+            <p class="price">Price: ₹850.00</p>
+            <p class="description" id="desc03" style="display: none;"><b>Description:</b> The Buttekofferi is a peaceful and hardy freshwater cichlid known for its beautiful coloration, with shades of blue and orange. It thrives in well-maintained aquariums with plenty of hiding spots and a stable environment.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 6 to 8 inches (15 to 20 cm) in length
+                <b>Lifespan:</b> Typically lives 8 to 12 years with proper care.
             </p>
-            <button class="cartbutton" onclick="addToCart('Buttekofferi',850)">Add to Cart</button>
+            <button class="cartbutton" onclick="addToCart('Buttekofferi', 850)">Add to Cart</button>
         </div>
         <div class="fishdetails">
-            <img class="fishimg" src="floridagar.jpg" alt="Florida gar">
-            <p class="name" class="name" onclick="toggleDescription('desc4')">Florida gar 14" </p>
-            <p class="price">Price: Rs.2000</p>
-            <p class="description" id="desc4" style="display: none;"><b>Description:</b> The Florida Gar is a long, predatory fish known for its sleek body and sharp, elongated snout. It is an active swimmer that requires a large aquarium with plenty of swimming space and secure tank conditions.
-            <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
-            <b>Size:</b> Can grow up to 36 inches (90 cm) in length.
-            <b>Lifespan:</b> Typically lives 10 to 20 years with proper care.
+            <img class="fishimg" src="floridagar.jpg" alt="Florida Gar">
+            <p class="name" onclick="toggleDescription('desc04')">Florida Gar 14"</p>
+            <p class="price">Price: ₹2,000.00</p>
+            <p class="description" id="desc04" style="display: none;"><b>Description:</b> The Florida Gar is a long, predatory fish known for its sleek body and sharp, elongated snout. It is an active swimmer that requires a large aquarium with plenty of swimming space and secure tank conditions.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 36 inches (90 cm) in length.
+                <b>Lifespan:</b> Typically lives 10 to 20 years with proper care.
             </p>
-            <button class="cartbutton" onclick="addToCart('Florida gar',2000)">Add to Cart</button>
+            <button class="cartbutton" onclick="addToCart('Florida Gar', 2000)">Add to Cart</button>
         </div>
         <div class="fishdetails">
-            <img class="fishimg" src="africanlungfish.jpg" alt="African lung fish">
-            <p class="name" class="name" onclick="toggleDescription('desc5')">African lung fish 1.5 feet </p>
-            <p class="price">Price: Rs.6500</p>
-            <p class="description" id="desc5" style="display: none;"><b>Description:</b> The African Lungfish is a unique, prehistoric fish known for its ability to breathe air and its eel-like body. It requires a large tank with low water levels and plenty of hiding spaces, as it is a solitary and slow-moving species.
-            <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
-            <b>Size:</b> Can grow up to 6 feet (180 cm) in length.
-            <b>Lifespan:</b> Typically lives 15 to 20 years with proper care.
+            <img class="fishimg" src="africanlungfish.jpg" alt="African Lungfish">
+            <p class="name" onclick="toggleDescription('desc05')">African Lungfish 1.5 feet</p>
+            <p class="price">Price: ₹6,500.00</p>
+            <p class="description" id="desc05" style="display: none;"><b>Description:</b> The African Lungfish is a unique, prehistoric fish known for its ability to breathe air and its eel-like body. It requires a large tank with low water levels and plenty of hiding spaces, as it is a solitary and slow-moving species.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 6 feet (180 cm) in length.
+                <b>Lifespan:</b> Typically lives 15 to 20 years with proper care.
             </p>
-            <button class="cartbutton" onclick="addToCart('African lung fish',6500)">Add to Cart</button>
+            <button class="cartbutton" onclick="addToCart('African Lungfish', 6500)">Add to Cart</button>
         </div>
         <div class="fishdetails">
-            <img class="fishimg" src="Tigeroscar.jpg" alt="Tiger oscar">
-            <p class="name" onclick="toggleDescription('desc6')">Tiger Oscar 10-11"</p>
-            <p class="price">Price: Rs.1200</p>
-            <p class="description" id="desc6" style="display: none;"><b>Description:</b> The Tiger Oscar is a popular and aggressive freshwater fish known for its striking black and orange striped pattern. It requires a large tank with plenty of space, hiding spots, and stable water conditions. Due to its territorial nature, it thrives in tanks with few or no tank mates.
-            <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
-            <b>Size:</b> Can grow up to 14 inches (35 cm) in length.
-            <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+            <img class="fishimg" src="Tigeroscar.jpg" alt="Tiger Oscar">
+            <p class="name" onclick="toggleDescription('desc06')">Tiger Oscar 10-11"</p>
+            <p class="price">Price: ₹1,200.00</p>
+            <p class="description" id="desc06" style="display: none;"><b>Description:</b> The Tiger Oscar is a popular and aggressive freshwater fish known for its striking black and orange striped pattern. It requires a large tank with plenty of space, hiding spots, and stable water conditions. Due to its territorial nature, it thrives in tanks with few or no tank mates.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 14 inches (35 cm) in length.
+                <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
             </p>
-            <button class="cartbutton" onclick="addToCart('Tiger oscar',1200)">Add to Cart</button>
+            <button class="cartbutton" onclick="addToCart('Tiger Oscar', 1200)">Add to Cart</button>
         </div>
-            <div class="fishdetails">
-                <img class="fishimg" src="Redsnooksplendida.jpg" alt="Red snook splendida">
-                <p class="name" onclick="toggleDescription('desc7')">Red snook splendida</p>
-                <p class="price">Price: Rs.800</p>
-                <p class="description" id="desc7" style="display: none;">
-                    <b>Description:</b> The Redsnook Splendida is a striking and predatory freshwater fish known for its vibrant colors and sleek body. It requires a large, well-maintained aquarium with plenty of space to swim.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
-                    <b>Size:</b> Can grow up to 24 inches (60 cm) in length.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Red snook splendida',800)">Add to Cart</button>
-            </div>
-            <div class="fishdetails">
-                <img class="fishimg" src="Copperoscar.jpg" alt="Copper oscar">
-                <p class="name" onclick="toggleDescription('desc8')">Copper oscar 10-11"</p>
-                <p class="price">Price: Rs.1500</p>
-                <p class="description" id="desc8" style="display: none;">
-                    <b>Description:</b> The Copper Oscar is a beautiful and aggressive freshwater fish known for its copper-toned body and striking markings. It requires a large tank with ample space and hiding spots due to its territorial nature.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
-                    <b>Size:</b> Can grow up to 14 inches (35 cm) in length.
-                    <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Copper oscar',1500)">Add to Cart</button>
-            </div>
-            <div class="fishdetails">
-                <img class="fishimg" src="AlbinoTigerOscar.jpg" alt="Albino Tiger Oscar">
-                <p class="name" onclick="toggleDescription('desc9')">Albino Tiger Oscar 10-11"</p>
-                <p class="price">Price: Rs.1500</p>
-                <p class="description" id="desc9" style="display: none;">
-                    <b>Description:</b> The Albino Tiger Oscar is a striking freshwater fish with vibrant orange and white markings. Known for its intelligent and territorial nature, it requires a large tank with plenty of space and hiding spots. It is an aggressive species that thrives with careful tank management.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
-                    <b>Size:</b> Can grow up to 14 inches (35 cm) in length.
-                    <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Albino Tiger Oscar',1500)">Add to Cart</button>
-            </div>
-
-            <div class="fishdetails">
-                <img class="fishimg" src="AlbinoTigerOscar.jpg" alt="Albino Tiger Oscar">
-                <p class="name" onclick="toggleDescription('desc22')">Albino Tiger Oscar 8"</p>
-                <p class="price">Price: Rs.1200</p>
-                <p class="description" id="desc22" style="display: none;">
-                    <b>Description:</b> The Albino Tiger Oscar is a stunning freshwater fish featuring vibrant orange and white markings. Renowned for its intelligent and territorial behavior, it requires a spacious tank with ample space and hiding spots. This aggressive species thrives with careful tank management.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.<br>
-                    <b>Size:</b> Can grow up to 14 inches (35 cm) in length.<br>
-                    <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Albino Tiger Oscar', 1200)">Add to Cart</button>
-            </div>
-
-            <div class="fishdetails">
-                <img class="fishimg" src="mangooscar.png" alt="Mango Oscar">
-                <p class="name" onclick="toggleDescription('desc23')">Mango Oscar 8"</p>
-                <p class="price">Price: Rs.1200</p>
-                <p class="description" id="desc23" style="display: none;">
-                    <b>Description:</b> The Mango Oscar is a visually striking freshwater fish known for its vibrant yellow and orange coloration, accented with dark markings. This intelligent and territorial species requires a spacious tank equipped with plenty of hiding spots and shelter. The Mango Oscar is known for its lively personality and interaction with its environment.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.<br>
-                    <b>Size:</b> Can grow up to 14 inches (35 cm) in length.<br>
-                    <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Mango Oscar', 1200)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="redtailcatfish.png" alt="Red Tail Catfish">
-                <p class="name" onclick="toggleDescription('desc29')">Red Tail Catfish 5"</p>
-                <p class="price">Price: Rs. 500</p>
-                <p class="description" id="desc29" style="display: none;">
-                    <b>Description:</b> The Red Tail Catfish is a striking freshwater fish, known for its iconic red-orange tail and robust body. This fish is an active swimmer that needs a spacious aquarium equipped with adequate filtration due to its size and bio-load. As it grows, it can reach impressive lengths, making it suitable for experienced aquarists.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5.<br>
-                    <b>Size:</b> Can grow up to 3 feet (90 cm) in captivity.<br>
-                    <b>Lifespan:</b> Lives around 15 years with proper care.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Red Tail Catfish', 500)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="armouredcatfish.png" alt="Armoured Sea Catfish">
-                <p class="name" onclick="toggleDescription('desc30')">Armoured Sea Catfish 5"</p>
-                <p class="price">Price: Rs. 1,650</p>
-                <p class="description" id="desc30" style="display: none;">
-                    <b>Description:</b> The Armoured Sea Catfish is notable for its unique armored body, giving it a distinct appearance in the aquarium. This peaceful fish thrives in groups and prefers hiding spots. Suitable for community tanks, it brings a unique look and behavior to aquarium settings. Make sure to provide a sandy substrate and plenty of decor.
-                    <b>pH:</b> Ideal pH range is 6.5 to 7.5.<br>
-                    <b>Size:</b> Generally grows up to 12 inches (30 cm) as adults.<br>
-                    <b>Lifespan:</b> Can live around 10 years or more with appropriate care.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Armoured Sea Catfish', 1650)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="marblelancer.png" alt="Marble Lancer">
-                <p class="name" onclick="toggleDescription('desc31')">Marble Lancer 5-6"</p>
-                <p class="price">Price: Rs. 800</p>
-                <p class="description" id="desc31" style="display: none;">
-                    <b>Description:</b> The Marble Lancer is an elegant freshwater fish noted for its beautiful marbled pattern. This lively species adds color and movement to aquariums and is relatively easy to care for. They are best kept in small groups and appreciate a tank with plenty of plants and hiding spots.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5.<br>
-                    <b>Size:</b> Typically reaches 8 to 10 inches (20 to 25 cm) when fully grown.<br>
-                    <b>Lifespan:</b> Generally lives between 5 to 7 years with proper care.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Marble Lancer', 800)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="FlameRedOscar.jpg" alt="Flame Red oscar">
-                <p class="name" onclick="toggleDescription('desc10')">Flame Red Oscar 10-11"</p>
-                <p class="price">Price: Rs.1500</p>
-                <p class="description" id="desc10" style="display: none;">
-                    <b>Description:</b> The Flame Red Oscar is a vibrant freshwater fish with brilliant red-orange coloration and distinctive black markings. Known for its aggressive and territorial behavior, it requires a large tank with ample space and hiding spots. It is an intelligent and active species, often interacting with its environment.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
-                    <b>Size:</b> Can grow up to 14 inches (35 cm) in length.
-                    <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Flame Red oscar',1500)">Add to Cart</button>
-            </div>
-
-            <div class="fishdetails">
-                <img class="fishimg" src="redcopperoscar.png" alt="Red Copper oscar 8">
-                <p class="name" onclick="toggleDescription('desc21')">Red Copper oscar 8"</p>
-                <p class="price">Price: Rs.1,200</p>
-                <p class="description" id="desc21" style="display: none;">
-                    <b>Description:</b> The Red Copper Oscar is a striking freshwater fish known for its rich red and copper hues combined with unique black markings. This species is recognized for its aggressive and territorial behavior, requiring a large tank with plenty of space and hiding spots. Highly intelligent and active, Red Copper Oscars often engage with their environment and their keepers.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.<br>
-                    <b>Size:</b> Can grow up to 14 inches (35 cm) in length.<br>
-                    <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Red Copper Oscar',1200)">Add to Cart</button>
-            </div>
-            <div class="fishdetails">
-                <img class="fishimg" src="YellowFlagtail.jpg" alt="Yellow Flagtail">
-                <p class="name" onclick="toggleDescription('desc11')">Yellow Flagtail 7-8"</p>
-                <p class="price">Price: Rs.2000</p>
-                <p class="description" id="desc11" style="display: none;">
-                    <b>Description:</b> A vibrant freshwater species known for its striking yellow tail and elongated body. It is an active and peaceful fish that requires a spacious tank with plenty of swimming space.
-                    <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
-                    <b>Size:</b> Can grow up to 10 inches (25 cm) in length.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Yellow Flagtail',2000)">Add to Cart</button>
-            </div>
-            <div class="fishdetails">
-                <img class="fishimg" src="Ornatesenegal.jpg" alt="Ornate senegal">
-                <p class="name" onclick="toggleDescription('desc12')">Ornate senegal 3-4"</p>
-                <p class="price">Price: Rs.1500</p>
-                <p class="description" id="desc12" style="display: none;">
-                    <b>Description:</b> The Ornate Bichir is a prehistoric-looking fish with an elongated body and armored scales. It is a nocturnal and peaceful species that requires a spacious tank with plenty of hiding places.
-                    <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
-                    <b>Size:</b> Can grow up to 20 inches (50 cm) in length.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Ornate senegal',1500)">Add to Cart</button>
-            </div>
-            <div class="fishdetails">
-                <img class="fishimg" src="PeacockbassAzul.jpg" alt="Peacock bass Azul">
-                <p class="name" onclick="toggleDescription('desc13')">Peacock bass Azul 4-5"</p>
-                <p class="price">Price: Rs.1000</p>
-                <p class="description" id="desc13" style="display: none;">
-                    <b>Description:</b> The Azul Peacock Bass is a vibrant and aggressive freshwater fish known for its striking blue and yellow coloration. It thrives in a spacious aquarium with clean, well-filtered water. The ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water conditions for optimal health and growth.
-                    <b>Size:</b> This fish can grow up to 24 inches (60 cm) in length.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Peacock bass Azul 4-5',1000)">Add to Cart</button>
-            </div>
-            <div class="fishdetails">
-                <img class="fishimg" src="importedpeacockbass.png" alt="Peacock bass Azul">
-                <p class="name" onclick="toggleDescription('desc14')">Imported Peacock bass Azul 10-12"</p>
-                <p class="price">Price: Rs.6000</p>
-                <p class="description" id="desc14" style="display: none;">
-                    <b>Description:</b> The Azul Peacock Bass is a vibrant and aggressive freshwater fish known for its striking blue and yellow coloration. It thrives in a spacious aquarium with clean, well-filtered water. The ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water conditions for optimal health and growth.
-                    <b>Size:</b> This fish can grow up to 24 inches (60 cm) in length.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Peacock bass Azul 10-12',6000)">Add to Cart</button>
-            </div>
-
-            <div class="fishdetails">
-                <img class="fishimg" src="Goldenkelberi.jpg" alt="Golden kelberi">
-                <p class="name" onclick="toggleDescription('desc15')">Golden kelberi peacock bass 6"</p>
-                <p class="price">Price: Rs.1000</p>
-                <p class="description" id="desc15" style="display: none;">
-                    <b>Description:</b> The Golden Kelberi Peacock Bass is a stunning freshwater fish with vibrant golden-yellow hues and distinctive black markings. Known for its active and aggressive nature, it requires a large, well-maintained aquarium. The ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water for optimal health and vitality.
-                    <b>Size:</b> It can grow up to 24 inches (60 cm) in length.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Golden kelberi peacock bass 6',1000)">Add to Cart</button>
-            </div>
-
-            <div class="fishdetails">
-                <img class="fishimg" src="goldenkelberi8.png" alt="Golden kelberi">
-                <p class="name" onclick="toggleDescription('desc16')">Golden kelberi peacock bass 8"</p>
-                <p class="price">Price: Rs.1200</p>
-                <p class="description" id="desc16" style="display: none;">
-                    <b>Description:</b> The Golden Kelberi Peacock Bass is a stunning freshwater fish with vibrant golden-yellow hues and distinctive black markings. Known for its active and aggressive nature, it requires a large, well-maintained aquarium. The ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water for optimal health and vitality.
-                    <b>Size:</b> It can grow up to 24 inches (60 cm) in length.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Golden kelberi peacock bass 6',1000)">Add to Cart</button>
-            </div>
-
-            <div class="fishdetails">
-                <img class="fishimg" src="AlbinoRedbelliedpacu.jpg" alt="Albino Red bellied pacu">
-                <p class="name" onclick="toggleDescription('desc17')">Albino Red bellied pacu 7"</p>
-                <p class="price">Price: Rs.800</p>
-                <p class="description" id="desc17" style="display: none;">
-                    <b>Description:</b> The Albino Red-Bellied Pacu is a peaceful freshwater fish with a striking pale body and vibrant red belly. It requires a spacious, well-maintained aquarium due to its large size and active nature.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
-                    <b>Size:</b> Can grow up to 30 inches (76 cm) in length.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Albino Red bellied pacu',800)">Add to Cart</button>
-            </div>
-
-            <div class="fishdetails">
-                <img class="fishimg" src="albinopacu.png" alt="Albino Pacu">
-                <p class="name" onclick="toggleDescription('desc17')">Albino Pacu 7-8"</p>
-                <p class="price">Price: Rs.700</p>
-                <p class="description" id="desc17" style="display: none;">
-                    <b>Description:</b> The Albino Pacu is a peaceful freshwater fish with a striking pale body. It requires a spacious, well-maintained aquarium due to its large size and active nature.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
-                    <b>Size:</b> Can grow up to 30 inches (76 cm) in length, currently available size is 7-8 inches (18-20 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Albino Red bellied pacu',800)">Add to Cart</button>
-            </div>
-
-            <div class="fishdetails">
-                <img class="fishimg" src="bluebasearowana.png" alt="F2 Blue Base Arowana 6-7">
-                <p class="name" onclick="toggleDescription('desc18')">F2 Blue Base Arowana 6-7"</p>
-                <p class="price">Price: Rs.14,000</p>
-                <p class="description" id="desc18" style="display: none;">
-                    <b>Description:</b>The F2 Blue Base Arowana is an elegant freshwater fish known for its stunning blue sheen and streamlined body. It requires a spacious, well-maintained aquarium to accommodate its potential for growth and active behavior.
-                    <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.<br>
-                    <b>Size:</b> Typically grows to around 24 inches (61 cm) in length, but can reach up to 36 inches (91 cm) in optimal conditions. Initially, it reaches about 6 to 7 inches (15 to 18 cm) during its early growth stages.
-                </p>
-                <button class="cartbutton" onclick="addToCart('F2 Blue Base Arowana 6-7',14000)">Add to Cart</button>
-            </div>
-            <div class="fishdetails">
-                <img class="fishimg" src="redtailarowana.png" alt="Red Tail Golden Arowana">
-                <p class="name" onclick="toggleDescription('desc19')">Red Tail Golden Arowana (Qian Hu) 8-9"</p>
-                <p class="price">Price: Rs.11,000</p>
-                <p class="description" id="desc19" style="display: none;">
-                    <b>Description:</b> The Red Tail Golden Arowana from Qian Hu is a stunning freshwater fish admired for its vibrant golden scales and striking red tail. This fish requires a spacious, well-maintained aquarium to support its growth and active swimming behavior.
-                    <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.<br>
-                    <b>Size:</b> Typically grows to around 24 inches (61 cm) in length, but can reach up to 36 inches (91 cm) under optimal conditions. Initially, it reaches about 6 to 7 inches (15 to 18 cm) during its early growth stages.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Red Tail Golden Arowana 8-9',11000)">Add to Cart</button>
-            </div>
-            <div class="fishdetails">
-                <img class="fishimg" src="albinoarowana.png" alt="Albino Arowana 7+">
-                <p class="name" onclick="toggleDescription('desc20')">Albino Arowana 7+"</p>
-                <p class="price">Price: Rs.2,500</p>
-                <p class="description" id="desc20" style="display: none;">
-                    <b>Description:</b> The Albino Arowana is a breathtaking freshwater fish known for its striking white body and delicate pinkish hues. This fish requires a spacious, well-maintained aquarium to accommodate its growth and active swimming habits.
-                    <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.<br>
-                    <b>Size:</b> Typically grows to around 24 inches (61 cm) in length, but can reach up to 36 inches (91 cm) in optimal conditions. Initially, it reaches about 6 to 7 inches (15 to 18 cm) during its early growth stages.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Albino Arowana 7+',2500)">Add to Cart</button>
-            </div>
-            <div class="fishdetails">
-                <img class="fishimg" src="channalimbata.png" alt="Channa Limbata">
-                <p class="name" onclick="toggleDescription('desc1')">Channa Limbata 6"</p>
-                <p class="price">Price: Rs.800</p>
-                <p class="description" id="desc1" style="display: none;">
-                    <b>Description:</b> The Channa Limbata, also known as the Snakehead, is a freshwater fish known for its elongated body and aggressive behavior. It thrives in various aquatic environments.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5.
-                    <b>Size:</b> Currently available size is 6 inches (15 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Channa Limbata',800)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="caspianbarble.png" alt="Caspian Barble">
-                <p class="name" onclick="toggleDescription('desc2')">Caspian Barble 6-7"</p>
-                <p class="price">Price: Rs.1200</p>
-                <p class="description" id="desc2" style="display: none;">
-                    <b>Description:</b> The Caspian Barble is a lively and colorful freshwater fish that is known for its social behavior and ability to thrive in schools.
-                    <b>pH:</b> Ideal pH range is 6.5 to 7.5.
-                    <b>Size:</b> Currently available size is 6-7 inches (15-18 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Caspian Barble',1200)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="siamtiger.png" alt="Siam Tiger">
-                <p class="name" onclick="toggleDescription('desc3')">Siam Tiger 6-7"</p>
-                <p class="price">Price: Rs.1800</p>
-                <p class="description" id="desc3" style="display: none;">
-                    <b>Description:</b> The Siam Tiger is a striking freshwater fish recognized for its beautiful stripes and active nature. It is best kept in a spacious aquarium.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5.
-                    <b>Size:</b> Currently available size is 6-7 inches (15-18 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Siam Tiger',1800)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="goldenmahaseer.png" alt="Golden Mahaseer">
-                <p class="name" onclick="toggleDescription('desc4')">Golden Mahaseer 4"</p>
-                <p class="price">Price: Rs.450</p>
-                <p class="description" id="desc4" style="display: none;">
-                    <b>Description:</b> The Golden Mahaseer is a freshwater fish with a splendid golden hue. It is known for its robustness and adaptability to different water conditions.
-                    <b>pH:</b> Ideal pH range is 6.5 to 7.5.
-                    <b>Size:</b> Currently available size is 4 inches (10 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Golden Mahaseer',450)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="bandedlepronius.png" alt="Banded Lepronius">
-                <p class="name" onclick="toggleDescription('desc5')">Banded Lepronius 6"</p>
-                <p class="price">Price: Rs.800</p>
-                <p class="description" id="desc5" style="display: none;">
-                    <b>Description:</b> The Banded Lepronius is a unique freshwater fish known for its striking bands and peaceful demeanor, making it an excellent choice for community tanks.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5.
-                    <b>Size:</b> Currently available size is 6 inches (15 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Banded Lepronius',800)">Add to Cart</button>
-            </div>
-            <div class="fishdetails">
-                <img class="fishimg" src="greenarowana.png" alt="Green Arowana">
-                <p class="name" onclick="toggleDescription('desc6')">Green Arowana 5-6"</p>
-                <p class="price">Price: Rs. 3,500</p>
-                <p class="description" id="desc6" style="display: none;">
-                    <b>Description:</b> The Green Arowana is a highly sought-after freshwater fish known for its stunning iridescent green scales and graceful swimming. It requires a large aquarium to accommodate its size and active nature.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5.
-                    <b>Size:</b> Currently available size is 5-6 inches (13-15 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Green Arowana',3500)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="goldenhighbackarowana.png" alt="Golden Highback Arowana">
-                <p class="name" onclick="toggleDescription('desc7')">Golden Highback Arowana 7-8"</p>
-                <p class="price">Price: Rs. 7,500</p>
-                <p class="description" id="desc7" style="display: none;">
-                    <b>Description:</b> The Golden Highback Arowana is known for its striking gold color and high back, making it one of the most beautiful freshwater fish available. It thrives in large and well-maintained aquariums.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5.
-                    <b>Size:</b> Currently available size is 7-8 inches (18-20 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Golden Highback Arowana',7500)">Add to Cart</button>
-            </div>
-
-            <div class="fishdetails">
-                <img class="fishimg" src="coppermahaseer.png" alt="Copper Mahaseer">
-                <p class="name" onclick="toggleDescription('desc8')">Copper Mahaseer 8"</p>
-                <p class="price">Price: Rs. 1,000</p>
-                <p class="description" id="desc8" style="display: none;">
-                    <b>Description:</b> The Copper Mahaseer is a beautiful freshwater fish known for its striking copper hue and robustness. It is an excellent choice for a well-planted aquarium.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5.
-                    <b>Size:</b> Currently available size is 8 inches (20 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Copper Mahaseer',1000)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="frogmouthcatfish.png" alt="Frog Mouth Catfish">
-                <p class="name" onclick="toggleDescription('desc9')">Frog Mouth Catfish 4-7"</p>
-                <p class="price">Price: Rs. 350</p>
-                <p class="description" id="desc9" style="display: none;">
-                    <b>Description:</b> The Frog Mouth Catfish, known for its unique appearance resembling a frog's mouth, is a peaceful bottom dweller that adds interest to community aquariums.
-                    <b>pH:</b> Ideal pH range is 6.5 to 7.5.
-                    <b>Size:</b> Currently available size varies from 4 to 7 inches (10-18 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Frog Mouth Catfish',350)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="goldenmahaseer.png" alt="Golden Mahaseer">
-                <p class="name" onclick="toggleDescription('desc10')">Golden Mahaseer 7"</p>
-                <p class="price">Price: Rs. 1,200</p>
-                <p class="description" id="desc10" style="display: none;">
-                    <b>Description:</b> The Golden Mahaseer is admired for its golden color and is a robust freshwater fish that thrives in varying conditions. It is ideal for both novice and experienced aquarists.
-                    <b>pH:</b> Ideal pH range is 6.5 to 7.5.
-                    <b>Size:</b> Currently available size is 7 inches (18 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Golden Mahaseer',1200)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="goonchcatfish.png" alt="Goonch Catfish">
-                <p class="name" onclick="toggleDescription('desc11')">Goonch Catfish 10-12"</p>
-                <p class="price">Price: Rs. 1,200</p>
-                <p class="description" id="desc11" style="display: none;">
-                    <b>Description:</b> The Goonch Catfish is a large and powerful freshwater fish known for its impressive size and unique appearance. It's best suited for spacious aquariums.
-                    <b>pH:</b> Ideal pH range is 6.5 to 7.5.
-                    <b>Size:</b> Currently available size varies from 10 to 12 inches (25-30 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Goonch Catfish',1200)">Add to Cart</button>
-            </div>
-            
-            <div class="fishdetails">
-                <img class="fishimg" src="goldenpearlarowana.png" alt="Golden Pearl Arowana">
-                <p class="name" onclick="toggleDescription('desc12')">Golden Pearl Arowana 7-8"</p>
-                <p class="price">Price: Rs. 2,800</p>
-                <p class="description" id="desc12" style="display: none;">
-                    <b>Description:</b> The Golden Pearl Arowana is highly prized for its pearlescent body and vibrant colors. This fish requires a spacious aquarium and is best kept with other peaceful species.
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5.
-                    <b>Size:</b> Currently available size is 7-8 inches (18-20 cm).
-                </p>
-                <button class="cartbutton" onclick="addToCart('Golden Pearl Arowana',2800)">Add to Cart</button>
-            </div>
-
-            <div class="fishdetails">
-                <img class="fishimg" src="channa.png" alt="Channa Pseudomurulius">
-                <p class="name" onclick="toggleDescription('desc_channa')">Channa Pseudomurulius 22-24" (Extremely Rare)</p>
-                <p class="price">Price: Rs. 6,500</p>
-                <p class="description" id="desc_channa" style="display: none;">
-                    <b>Description:</b> The Channa Pseudomurulius, also known as the Emerald Dwarf Snakehead, is an extremely rare and highly sought-after freshwater fish. This unique species is known for its stunning coloration and elongated body. They require larger aquariums with ample space to swim and plenty of hiding spots. The Channa Pseudomurulius is known to be territorial, so be cautious when choosing tank mates.<br>
-                    <b>pH:</b> Ideal pH range is 6.0 to 7.5.<br>
-                    <b>Size:</b> Typically grow up to 22-24 inches (56-61 cm) as adults.<br>
-                    <b>Lifespan:</b> Can live 10-15 years with proper care and maintenance.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Channa Pseudomurulius', 6500)">Add to Cart</button>
-            </div>
-
-            <div class="fishdetails">
-                <img class="fishimg" src="paroonshark.png" alt="Paroon Shark">
-                <p class="name" onclick="toggleDescription('desc_paroon')">Paroon Shark 8"</p>
-                <p class="price">Price: ₹1,000.00</p>
-                <p class="description" id="desc_paroon" style="display: none;">
-                    <b>Description:</b> The Paroon Shark is an impressive freshwater fish known for its sleek body and unique shark-like appearance. This species prefers a spacious aquarium with plenty of swimming space, avoiding crowded environments.<br>
-                    <b>Lifespan:</b> 15-20 years with proper care.<br>
-                    <b>Maximum Size:</b> Can reach up to 36 inches (90 cm) in captivity.<br>
-                    <b>Ideal Temperature:</b> 24-28°C (75-82°F).<br>
-                    <b>Country of Origin:</b> Southeast Asia, found in rivers and lakes in countries like Thailand and Indonesia.
-                </p>
-                <button class="cartbutton" onclick="addToCart('Paroon Shark', 1000)">Add to Cart</button>
-            </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="Redsnooksplendida.jpg" alt="Red Snook Splendida">
+            <p class="name" onclick="toggleDescription('desc07')">Red Snook Splendida</p>
+            <p class="price">Price: ₹800.00</p>
+            <p class="description" id="desc07" style="display: none;">
+                <b>Description:</b> The Redsnook Splendida is a striking and predatory freshwater fish known for its vibrant colors and sleek body. It requires a large, well-maintained aquarium with plenty of space to swim.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 24 inches (60 cm) in length.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Red Snook Splendida', 800)">Add to Cart</button>
         </div>
-        
-                    <script src="script.js"></script>
-
-                    
+        <div class="fishdetails">
+            <img class="fishimg" src="Copperoscar.jpg" alt="Copper Oscar">
+            <p class="name" onclick="toggleDescription('desc08')">Copper Oscar 10-11"</p>
+            <p class="price">Price: ₹1,500.00</p>
+            <p class="description" id="desc08" style="display: none;">
+                <b>Description:</b> The Copper Oscar is a beautiful and aggressive freshwater fish known for its copper-toned body and striking markings. It requires a large tank with ample space and hiding spots due to its territorial nature.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 14 inches (35 cm) in length.
+                <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Copper Oscar', 1500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="AlbinoTigerOscar.jpg" alt="Albino Tiger Oscar">
+            <p class="name" onclick="toggleDescription('desc09')">Albino Tiger Oscar 10-11"</p>
+            <p class="price">Price: ₹1,500.00</p>
+            <p class="description" id="desc09" style="display: none;">
+                <b>Description:</b> The Albino Tiger Oscar is a striking freshwater fish with vibrant orange and white markings. Known for its intelligent and territorial nature, it requires a large tank with plenty of space and hiding spots. It is an aggressive species that thrives with careful tank management.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 14 inches (35 cm) in length.
+                <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Albino Tiger Oscar', 1500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="AlbinoTigerOscar.jpg" alt="Albino Tiger Oscar">
+            <p class="name" onclick="toggleDescription('desc10')">Albino Tiger Oscar 8"</p>
+            <p class="price">Price: ₹1,200.00</p>
+            <p class="description" id="desc10" style="display: none;">
+                <b>Description:</b> The Albino Tiger Oscar is a stunning freshwater fish featuring vibrant orange and white markings. Renowned for its intelligent and territorial behavior, it requires a spacious tank with ample space and hiding spots. This aggressive species thrives with careful tank management.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.<br>
+                <b>Size:</b> Can grow up to 14 inches (35 cm) in length.<br>
+                <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Albino Tiger Oscar', 1200)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="mangooscar.png" alt="Mango Oscar">
+            <p class="name" onclick="toggleDescription('desc11')">Mango Oscar 8"</p>
+            <p class="price">Price: ₹1,200.00</p>
+            <p class="description" id="desc11" style="display: none;">
+                <b>Description:</b> The Mango Oscar is a visually striking freshwater fish known for its vibrant yellow and orange coloration, accented with dark markings. This intelligent and territorial species requires a spacious tank equipped with plenty of hiding spots and shelter. The Mango Oscar is known for its lively personality and interaction with its environment.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.<br>
+                <b>Size:</b> Can grow up to 14 inches (35 cm) in length.<br>
+                <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Mango Oscar', 1200)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="redtailcatfish.png" alt="Red Tail Catfish">
+            <p class="name" onclick="toggleDescription('desc12')">Red Tail Catfish 5"</p>
+            <p class="price">Price: ₹500.00</p>
+            <p class="description" id="desc12" style="display: none;">
+                <b>Description:</b> The Red Tail Catfish is a striking freshwater fish, known for its iconic red-orange tail and robust body. This fish is an active swimmer that needs a spacious aquarium equipped with adequate filtration due to its size and bio-load. As it grows, it can reach impressive lengths, making it suitable for experienced aquarists.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5.<br>
+                <b>Size:</b> Can grow up to 3 feet (90 cm) in captivity.<br>
+                <b>Lifespan:</b> Lives around 15 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Red Tail Catfish', 500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="armouredcatfish.png" alt="Armoured Sea Catfish">
+            <p class="name" onclick="toggleDescription('desc13')">Armoured Sea Catfish 5"</p>
+            <p class="price">Price: ₹1,650.00</p>
+            <p class="description" id="desc13" style="display: none;">
+                <b>Description:</b> The Armoured Sea Catfish is notable for its unique armored body, giving it a distinct appearance in the aquarium. This peaceful fish thrives in groups and prefers hiding spots. Suitable for community tanks, it brings a unique look and behavior to aquarium settings. Make sure to provide a sandy substrate and plenty of decor.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5.<br>
+                <b>Size:</b> Generally grows up to 12 inches (30 cm) as adults.<br>
+                <b>Lifespan:</b> Can live around 10 years or more with appropriate care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Armoured Sea Catfish', 1650)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="marblelancer.png" alt="Marble Lancer">
+            <p class="name" onclick="toggleDescription('desc14')">Marble Lancer 5-6"</p>
+            <p class="price">Price: ₹800.00</p>
+            <p class="description" id="desc14" style="display: none;">
+                <b>Description:</b> The Marble Lancer is an elegant freshwater fish noted for its beautiful marbled pattern. This lively species adds color and movement to aquariums and is relatively easy to care for. They are best kept in small groups and appreciate a tank with plenty of plants and hiding spots.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5.<br>
+                <b>Size:</b> Typically reaches 8 to 10 inches (20 to 25 cm) when fully grown.<br>
+                <b>Lifespan:</b> Generally lives between 5 to 7 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Marble Lancer', 800)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="FlameRedOscar.jpg" alt="Flame Red Oscar">
+            <p class="name" onclick="toggleDescription('desc15')">Flame Red Oscar 10-11"</p>
+            <p class="price">Price: ₹1,500.00</p>
+            <p class="description" id="desc15" style="display: none;">
+                <b>Description:</b> The Flame Red Oscar is a vibrant freshwater fish with brilliant red-orange coloration and distinctive black markings. Known for its aggressive and territorial behavior, it requires a large tank with ample space and hiding spots. It is an intelligent and active species, often interacting with its environment.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 14 inches (35 cm) in length.
+                <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Flame Red Oscar', 1500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="redcopperoscar.png" alt="Red Copper Oscar 8">
+            <p class="name" onclick="toggleDescription('desc16')">Red Copper Oscar 8"</p>
+            <p class="price">Price: ₹1,200.00</p>
+            <p class="description" id="desc16" style="display: none;">
+                <b>Description:</b> The Red Copper Oscar is a striking freshwater fish known for its rich red and copper hues combined with unique black markings. This species is recognized for its aggressive and territorial behavior, requiring a large tank with plenty of space and hiding spots. Highly intelligent and active, Red Copper Oscars often engage with their environment and their keepers.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.<br>
+                <b>Size:</b> Can grow up to 14 inches (35 cm) in length.<br>
+                <b>Lifespan:</b> Typically lives 10 to 15 years with proper care.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Red Copper Oscar', 1200)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="YellowFlagtail.jpg" alt="Yellow Flagtail">
+            <p class="name" onclick="toggleDescription('desc17')">Yellow Flagtail 7-8"</p>
+            <p class="price">Price: ₹2,000.00</p>
+            <p class="description" id="desc17" style="display: none;">
+                <b>Description:</b> A vibrant freshwater species known for its striking yellow tail and elongated body. It is an active and peaceful fish that requires a spacious tank with plenty of swimming space.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 10 inches (25 cm) in length.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Yellow Flagtail', 2000)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="Ornatesenegal.jpg" alt="Ornate Senegal">
+            <p class="name" onclick="toggleDescription('desc18')">Ornate Senegal 3-4"</p>
+            <p class="price">Price: ₹1,500.00</p>
+            <p class="description" id="desc18" style="display: none;">
+                <b>Description:</b> The Ornate Bichir is a prehistoric-looking fish with an elongated body and armored scales. It is a nocturnal and peaceful species that requires a spacious tank with plenty of hiding places.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 20 inches (50 cm) in length.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Ornate Senegal', 1500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="PeacockbassAzul.jpg" alt="Peacock Bass Azul">
+            <p class="name" onclick="toggleDescription('desc19')">Peacock Bass Azul 4-5"</p>
+            <p class="price">Price: ₹1,000.00</p>
+            <p class="description" id="desc19" style="display: none;">
+                <b>Description:</b> The Azul Peacock Bass is a vibrant and aggressive freshwater fish known for its striking blue and yellow coloration. It thrives in a spacious aquarium with clean, well-filtered water. The ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water conditions for optimal health and growth.
+                <b>Size:</b> This fish can grow up to 24 inches (60 cm) in length.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Peacock Bass Azul 4-5', 1000)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="importedpeacockbass.png" alt="Imported Peacock Bass Azul">
+            <p class="name" onclick="toggleDescription('desc20')">Imported Peacock Bass Azul 10-12"</p>
+            <p class="price">Price: ₹6,000.00</p>
+            <p class="description" id="desc20" style="display: none;">
+                <b>Description:</b> The Azul Peacock Bass is a vibrant and aggressive freshwater fish known for its striking blue and yellow coloration. It thrives in a spacious aquarium with clean, well-filtered water. The ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water conditions for optimal health and growth.
+                <b>Size:</b> This fish can grow up to 24 inches (60 cm) in length.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Imported Peacock Bass Azul 10-12', 6000)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="Goldenkelberi.jpg" alt="Golden Kelberi">
+            <p class="name" onclick="toggleDescription('desc21')">Golden Kelberi Peacock Bass 6"</p>
+            <p class="price">Price: ₹1,000.00</p>
+            <p class="description" id="desc21" style="display: none;">
+                <b>Description:</b> The Golden Kelberi Peacock Bass is a stunning freshwater fish with vibrant golden-yellow hues and distinctive black markings. Known for its active and aggressive nature, it requires a large, well-maintained aquarium. The ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water for optimal health and vitality.
+                <b>Size:</b> It can grow up to 24 inches (60 cm) in length.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Golden Kelberi Peacock Bass 6', 1000)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="goldenkelberi8.png" alt="Golden Kelberi">
+            <p class="name" onclick="toggleDescription('desc22')">Golden Kelberi Peacock Bass 8"</p>
+            <p class="price">Price: ₹1,200.00</p>
+            <p class="description" id="desc22" style="display: none;">
+                <b>Description:</b> The Golden Kelberi Peacock Bass is a stunning freshwater fish with vibrant golden-yellow hues and distinctive black markings. Known for its active and aggressive nature, it requires a large, well-maintained aquarium. The ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water for optimal health and vitality.
+                <b>Size:</b> It can grow up to 24 inches (60 cm) in length.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Golden Kelberi Peacock Bass 8', 1200)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="AlbinoRedbelliedpacu.jpg" alt="Albino Red-Bellied Pacu">
+            <p class="name" onclick="toggleDescription('desc23')">Albino Red-Bellied Pacu 7"</p>
+            <p class="price">Price: ₹800.00</p>
+            <p class="description" id="desc23" style="display: none;">
+                <b>Description:</b> The Albino Red-Bellied Pacu is a peaceful freshwater fish with a striking pale body and vibrant red belly. It requires a spacious, well-maintained aquarium due to its large size and active nature.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 30 inches (76 cm) in length.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Albino Red-Bellied Pacu', 800)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="albinopacu.png" alt="Albino Pacu">
+            <p class="name" onclick="toggleDescription('desc24')">Albino Pacu 7-8"</p>
+            <p class="price">Price: ₹700.00</p>
+            <p class="description" id="desc24" style="display: none;">
+                <b>Description:</b> The Albino Pacu is a peaceful freshwater fish with a striking pale body. It requires a spacious, well-maintained aquarium due to its large size and active nature.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5, with slightly acidic to neutral water.
+                <b>Size:</b> Can grow up to 30 inches (76 cm) in length, currently available size is 7-8 inches (18-20 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Albino Pacu', 700)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="bluebasearowana.png" alt="F2 Blue Base Arowana 6-7">
+            <p class="name" onclick="toggleDescription('desc25')">F2 Blue Base Arowana 6-7"</p>
+            <p class="price">Price: ₹14,000.00</p>
+            <p class="description" id="desc25" style="display: none;">
+                <b>Description:</b> The F2 Blue Base Arowana is an elegant freshwater fish known for its stunning blue sheen and streamlined body. It requires a spacious, well-maintained aquarium to accommodate its potential for growth and active behavior.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.<br>
+                <b>Size:</b> Typically grows to around 24 inches (61 cm) in length, but can reach up to 36 inches (91 cm) in optimal conditions. Initially, it reaches about 6 to 7 inches (15 to 18 cm) during its early growth stages.
+            </p>
+            <button class="cartbutton" onclick="addToCart('F2 Blue Base Arowana 6-7', 14000)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="redtailarowana.png" alt="Red Tail Golden Arowana">
+            <p class="name" onclick="toggleDescription('desc26')">Red Tail Golden Arowana (Qian Hu) 8-9"</p>
+            <p class="price">Price: ₹11,000.00</p>
+            <p class="description" id="desc26" style="display: none;">
+                <b>Description:</b> The Red Tail Golden Arowana from Qian Hu is a stunning freshwater fish admired for its vibrant golden scales and striking red tail. This fish requires a spacious, well-maintained aquarium to support its growth and active swimming behavior.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.<br>
+                <b>Size:</b> Typically grows to around 24 inches (61 cm) in length, but can reach up to 36 inches (91 cm) under optimal conditions. Initially, it reaches about 6 to 7 inches (15 to 18 cm) during its early growth stages.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Red Tail Golden Arowana 8-9', 11000)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="albinoarowana.png" alt="Albino Arowana 7+">
+            <p class="name" onclick="toggleDescription('desc27')">Albino Arowana 7+</p>
+            <p class="price">Price: ₹2,500.00</p>
+            <p class="description" id="desc27" style="display: none;">
+                <b>Description:</b> The Albino Arowana is a breathtaking freshwater fish known for its striking white body and delicate pinkish hues. This fish requires a spacious, well-maintained aquarium to accommodate its growth and active swimming habits.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.<br>
+                <b>Size:</b> Typically grows to around 24 inches (61 cm) in length, but can reach up to 36 inches (91 cm) in optimal conditions. Initially, it reaches about 6 to 7 inches (15 to 18 cm) during its early growth stages.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Albino Arowana 7+', 2500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="channalimbata.png" alt="Channa Limbata">
+            <p class="name" onclick="toggleDescription('desc28')">Channa Limbata 6"</p>
+            <p class="price">Price: ₹800.00</p>
+            <p class="description" id="desc28" style="display: none;">
+                <b>Description:</b> The Channa Limbata, also known as the Snakehead, is a freshwater fish known for its elongated body and aggressive behavior. It thrives in various aquatic environments.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5.
+                <b>Size:</b> Currently available size is 6 inches (15 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Channa Limbata', 800)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="caspianbarble.png" alt="Caspian Barble">
+            <p class="name" onclick="toggleDescription('desc29')">Caspian Barble 6-7"</p>
+            <p class="price">Price: ₹1,200.00</p>
+            <p class="description" id="desc29" style="display: none;">
+                <b>Description:</b> The Caspian Barble is a lively and colorful freshwater fish that is known for its social behavior and ability to thrive in schools.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5.
+                <b>Size:</b> Currently available size is 6-7 inches (15-18 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Caspian Barble', 1200)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="siamtiger.png" alt="Siam Tiger">
+            <p class="name" onclick="toggleDescription('desc30')">Siam Tiger 6-7"</p>
+            <p class="price">Price: ₹1,800.00</p>
+            <p class="description" id="desc30" style="display: none;">
+                <b>Description:</b> The Siam Tiger is a striking freshwater fish recognized for its beautiful stripes and active nature. It is best kept in a spacious aquarium.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5.
+                <b>Size:</b> Currently available size is 6-7 inches (15-18 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Siam Tiger', 1800)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="goldenmahaseer.png" alt="Golden Mahaseer">
+            <p class="name" onclick="toggleDescription('desc31')">Golden Mahaseer 4"</p>
+            <p class="price">Price: ₹450.00</p>
+            <p class="description" id="desc31" style="display: none;">
+                <b>Description:</b> The Golden Mahaseer is a freshwater fish with a splendid golden hue. It is known for its robustness and adaptability to different water conditions.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5.
+                <b>Size:</b> Currently available size is 4 inches (10 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Golden Mahaseer', 450)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="bandedlepronius.png" alt="Banded Lepronius">
+            <p class="name" onclick="toggleDescription('desc32')">Banded Lepronius 6"</p>
+            <p class="price">Price: ₹800.00</p>
+            <p class="description" id="desc32" style="display: none;">
+                <b>Description:</b> The Banded Lepronius is a unique freshwater fish known for its striking bands and peaceful demeanor, making it an excellent choice for community tanks.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5.
+                <b>Size:</b> Currently available size is 6 inches (15 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Banded Lepronius', 800)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="greenarowana.png" alt="Green Arowana">
+            <p class="name" onclick="toggleDescription('desc33')">Green Arowana 5-6"</p>
+            <p class="price">Price: ₹3,500.00</p>
+            <p class="description" id="desc33" style="display: none;">
+                <b>Description:</b> The Green Arowana is a highly sought-after freshwater fish known for its stunning iridescent green scales and graceful swimming. It requires a large aquarium to accommodate its size and active nature.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5.
+                <b>Size:</b> Currently available size is 5-6 inches (13-15 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Green Arowana', 3500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="goldenhighbackarowana.png" alt="Golden Highback Arowana">
+            <p class="name" onclick="toggleDescription('desc34')">Golden Highback Arowana 7-8"</p>
+            <p class="price">Price: ₹7,500.00</p>
+            <p class="description" id="desc34" style="display: none;">
+                <b>Description:</b> The Golden Highback Arowana is known for its striking gold color and high back, making it one of the most beautiful freshwater fish available. It thrives in large and well-maintained aquariums.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5.
+                <b>Size:</b> Currently available size is 7-8 inches (18-20 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Golden Highback Arowana', 7500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="coppermahaseer.png" alt="Copper Mahaseer">
+            <p class="name" onclick="toggleDescription('desc35')">Copper Mahaseer 8"</p>
+            <p class="price">Price: ₹1,000.00</p>
+            <p class="description" id="desc35" style="display: none;">
+                <b>Description:</b> The Copper Mahaseer is a beautiful freshwater fish known for its striking copper hue and robustness. It is an excellent choice for a well-planted aquarium.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5.
+                <b>Size:</b> Currently available size is 8 inches (20 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Copper Mahaseer', 1000)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="goldenmahaseer.png" alt="Golden Mahaseer">
+            <p class="name" onclick="toggleDescription('desc36')">Golden Mahaseer 7"</p>
+            <p class="price">Price: ₹1,200.00</p>
+            <p class="description" id="desc36" style="display: none;">
+                <b>Description:</b> The Golden Mahaseer is admired for its golden color and is a robust freshwater fish that thrives in varying conditions. It is ideal for both novice and experienced aquarists.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5.
+                <b>Size:</b> Currently available size is 7 inches (18 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Golden Mahaseer', 1200)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="goonchcatfish.png" alt="Goonch Catfish">
+            <p class="name" onclick="toggleDescription('desc37')">Goonch Catfish 10-12"</p>
+            <p class="price">Price: ₹1,200.00</p>
+            <p class="description" id="desc37" style="display: none;">
+                <b>Description:</b> The Goonch Catfish is a large and powerful freshwater fish known for its impressive size and unique appearance. It's best suited for spacious aquariums.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5.
+                <b>Size:</b> Currently available size varies from 10 to 12 inches (25-30 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Goonch Catfish', 1200)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="goldenpearlarowana.png" alt="Golden Pearl Arowana">
+            <p class="name" onclick="toggleDescription('desc38')">Golden Pearl Arowana 7-8"</p>
+            <p class="price">Price: ₹2,800.00</p>
+            <p class="description" id="desc38" style="display: none;">
+                <b>Description:</b> The Golden Pearl Arowana is highly prized for its pearlescent body and vibrant colors. This fish requires a spacious aquarium and is best kept with other peaceful species.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5.
+                <b>Size:</b> Currently available size is 7-8 inches (18-20 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Golden Pearl Arowana', 2800)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="channa.png" alt="Channa Pseudomurulius">
+            <p class="name" onclick="toggleDescription('desc39')">Channa Pseudomurulius 22-24" (Extremely Rare)</p>
+            <p class="price">Price: ₹6,500.00</p>
+            <p class="description" id="desc39" style="display: none;">
+                <b>Description:</b> The Channa Pseudomurulius, also known as the Emerald Dwarf Snakehead, is an extremely rare and highly sought-after freshwater fish. This unique species is known for its stunning coloration and elongated body. They require larger aquariums with ample space to swim and plenty of hiding spots. The Channa Pseudomurulius is known to be territorial, so be cautious when choosing tank mates.<br>
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5.<br>
+                <b>Size:</b> Typically grow up to 22-24 inches (56-61 cm) as adults.<br>
+                <b>Lifespan:</b> Can live 10-15 years with proper care and maintenance.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Channa Pseudomurulius', 6500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="paroonshark.png" alt="Paroon Shark">
+            <p class="name" onclick="toggleDescription('desc40')">Paroon Shark 8"</p>
+            <p class="price">Price: ₹1,000.00</p>
+            <p class="description" id="desc40" style="display: none;">
+                <b>Description:</b> The Paroon Shark is an impressive freshwater fish known for its sleek body and unique shark-like appearance. This species prefers a spacious aquarium with plenty of swimming space, avoiding crowded environments.<br>
+                <b>Lifespan:</b> 15-20 years with proper care.<br>
+                <b>Maximum Size:</b> Can reach up to 36 inches (90 cm) in captivity.<br>
+                <b>Ideal Temperature:</b> 24-28°C (75-82°F).<br>
+                <b>Country of Origin:</b> Southeast Asia, found in rivers and lakes in countries like Thailand and Indonesia.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Paroon Shark', 1000)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="bullseye.png" alt="Bulleyes Snakehead">
+            <p class="name" onclick="toggleDescription('desc41')">Bulleyes Snakehead 8"</p>
+            <p class="price">Price: ₹500.00</p>
+            <p class="description" id="desc41" style="display: none;">
+                <b>Description:</b> The Bulleyes Snakehead is a fascinating freshwater predator known for its striking pattern and adaptability. It requires a well-maintained tank and proper care to thrive.
+                <b>pH:</b> Ideal pH range is 6.0 to 7.5.
+                <b>Size:</b> Currently available size is 8 inches (20 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Bulleyes Snakehead', 500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="yellowlips.png" alt="Ornatapinnis Yellow Lips">
+            <p class="name" onclick="toggleDescription('desc42')">Ornatapinnis Yellow Lips 6-7"</p>
+            <p class="price">Price: ₹2,200.00</p>
+            <p class="description" id="desc42" style="display: none;">
+                <b>Description:</b> The Ornatapinnis Yellow Lips is a colorful and peaceful species that enhances the beauty of any aquarium. It thrives in a planted environment and is suitable for community tanks.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5.
+                <b>Size:</b> Currently available sizes are between 6 to 7 inches (15-18 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Ornatapinnis Yellow Lips', 2200)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="baramundi.png" alt="Baramundi">
+            <p class="name" onclick="toggleDescription('desc43')">Baramundi 7-8"</p>
+            <p class="price">Price: ₹1,250.00</p>
+            <p class="description" id="desc43" style="display: none;">
+                <b>Description:</b> Baramundi, known for its delicious taste, is a popular freshwater fish that grows quickly and adapts well to various aquarium conditions. Ideal for both beginners and experienced hobbyists.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5.
+                <b>Size:</b> Currently available sizes are between 7 to 8 inches (18-20 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Baramundi', 1250)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="kalikhola.png" alt="Channa Stewartii Kalikhola">
+            <p class="name" onclick="toggleDescription('desc44')">Channa Stewartii Kalikhola 7"</p>
+            <p class="price">Price: ₹700.00</p>
+            <p class="description" id="desc44" style="display: none;">
+                <b>Description:</b> Channa Stewartii Kalikhola is a vibrant and robust species that thrives in freshwater environments. This snakehead fish is known for its striking patterns and resilience.
+                <b>pH:</b> Ideal pH range is 6.0 to 8.0.
+                <b>Size:</b> Currently available size is 7 inches (18 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Channa Stewartii Kalikhola', 700)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="ornate.png" alt="Ornate Bichir">
+            <p class="name" onclick="toggleDescription('desc45')">Ornate Bichir 4"</p>
+            <p class="price">Price: ₹1,500.00</p>
+            <p class="description" id="desc45" style="display: none;">
+                <b>Description:</b> The Ornate Bichir has an elongated, eel-like body with dorsal finlets resembling prehistoric creatures. This hardy, nocturnal fish is semi-aggressive and requires a good setup to thrive.
+                <b>Lifespan:</b> 10–15 years, but can live up to 20 years with excellent care.
+                <b>Maximum Size:</b> 12–18 inches (30–45 cm) in captivity.
+                <b>Ideal Temperature:</b> 24–28°C (75–82°F).
+                <b>Country of Origin:</b> West and Central Africa, commonly found in the Nile River and Chad Basin.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Ornate Bichir', 1500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="redmosaic.png" alt="Channa Redmosaic">
+            <p class="name" onclick="toggleDescription('desc46')">Channa Redmosaic 5"</p>
+            <p class="price">Price: ₹1,500.00</p>
+            <p class="description" id="desc46" style="display: none;">
+                <b>Description:</b> The Channa Redmosaic is an aggressive, predatory fish characterized by its elongated body, large mouth, and vibrant coloration. This species is known for its ability to breathe air.
+                <b>Lifespan:</b> 8–20 years.
+                <b>Maximum Size:</b> Varies by species: Small species (6–8 inches), Medium species (12–16 inches), Large species (3–4 feet).
+                <b>Ideal Temperature:</b> 22–30°C (72–86°F).
+                <b>Country of Origin:</b> Asia and Africa, including India, Thailand, Indonesia, and more.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Channa Redmosaic', 1500)">Add to Cart</button>
+        </div>
+        <div class="fishdetails">
+            <img class="fishimg" src="fish.png" alt="Enlichery Senegal">
+            <p class="name" onclick="toggleDescription('desc47')">Enlichery Senegal 4"</p>
+            <p class="price">Price: ₹350.00</p>
+            <p class="description" id="desc47" style="display: none;">
+                <b>Description:</b> The Senegal Bichir has an elongated, eel-like body with a series of dorsal finlets. It is a hardy, nocturnal fish, often considered a "Dinosaur Bichir" due to its ancient appearance.
+                <b>Lifespan:</b> 10–15 years, but can live up to 20 years with excellent care.
+                <b>Maximum Size:</b> 12–18 inches (30–45 cm) in captivity.
+                <b>Ideal Temperature:</b> 24–28°C (75–82°F).
+                <b>Country of Origin:</b> West and Central Africa, commonly found in the Nile River and other freshwater systems.
+            </p>
+            <button class="cartbutton" onclick="addToCart('Enlichery Senegal', 350)">Add to Cart</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
