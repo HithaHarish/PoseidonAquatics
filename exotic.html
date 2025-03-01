@@ -8,17 +8,15 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    @media (orientation: portrait) {
-    .heading1{
-        font-size:0px;
-        margin-left: 50px;
-        font-weight: 550;
-    }
-}
-
-</style>
+    <style>
+        @media (orientation: portrait) {
+            .heading1 {
+                font-size: 0px;
+                margin-left: 50px;
+                font-weight: 550;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Menu Button -->
@@ -47,72 +45,73 @@
             <button onclick="searchFish()"><i class="fa fa-search"></i></button>
         </div>
         <div class="subtopred">
-            <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart" ></i></a>
+            <a class="nav-button" href="cart.html"><i class="fa fa-shopping-cart"></i></a>
             <img class="logotop" src="poseidon-logo.png.jpeg" alt="Poseidon Aquatics Logo">
         </div>
     </div>
+    
     <div class="fishcontainer">
         <div class="fishdetails">
             <img class="fishimg" src="deamonson.jpg" alt="Demanson's Cichlid">
-            <p class="name" onclick="toggleDescription('desc1')">Demanson's Cichlid 3-4</p>
-            <p class="price">Price: Rs. 350 </p>
-            <p class="description" id="desc1" style="display: none;">African Cichlids are colorful, territorial fish native to African lakes like Lake Malawi. They thrive in stable, well-maintained tanks with slightly alkaline, hard water. Lifespan: 8 to 15 years.</p>
+            <p class="name" onclick="toggleDescription('desc01')">Demanson's Cichlid 3-4"</p>
+            <p class="price">Price: ₹350.00</p>
+            <p class="description" id="desc01" style="display: none;">African Cichlids are colorful, territorial fish native to African lakes like Lake Malawi. They thrive in stable, well-maintained tanks with slightly alkaline, hard water. Lifespan: 8 to 15 years.</p>
             <button class="cartbutton" onclick="addToCart('Demanson Cichlid', 350)">Add to Cart</button>
         </div>
 
         <div class="fishdetails">
             <img class="fishimg" src="redspotted.jpg" alt="Redspotted Severum">
-            <p class="name" onclick="toggleDescription('desc2')">Redspotted Severum 7</p>
-            <p class="price">Price: Rs. 1200 </p>
-            <p class="description" id="desc2" style="display: none;">The Redspotted Severum is a vibrant freshwater cichlid known for its bright green body and distinct red spots. Lifespan: 10 to 15 years. Ideal pH: 6.5 to 7.5.</p>
+            <p class="name" onclick="toggleDescription('desc02')">Redspotted Severum 7"</p>
+            <p class="price">Price: ₹1,200.00</p>
+            <p class="description" id="desc02" style="display: none;">The Redspotted Severum is a vibrant freshwater cichlid known for its bright green body and distinct red spots. Lifespan: 10 to 15 years. Ideal pH: 6.5 to 7.5.</p>
             <button class="cartbutton" onclick="addToCart('Redspotted Severum', 1200)">Add to Cart</button>
         </div>
 
         <div class="fishdetails">
             <img class="fishimg" src="blackberry.jpg" alt="Black Berry Dollar">
-            <p class="name" onclick="toggleDescription('desc3')">Black Berry Dollar 3-4</p>
-            <p class="price">Price: Rs. 850 </p>
-            <p class="description" id="desc3" style="display: none;">A striking freshwater fish with deep black body and metallic, iridescent spots. Lifespan: 5 to 7 years. Ideal pH: 6.5 to 7.5.</p>
+            <p class="name" onclick="toggleDescription('desc03')">Black Berry Dollar 3-4"</p>
+            <p class="price">Price: ₹850.00</p>
+            <p class="description" id="desc03" style="display: none;">A striking freshwater fish with deep black body and metallic, iridescent spots. Lifespan: 5 to 7 years. Ideal pH: 6.5 to 7.5.</p>
             <button class="cartbutton" onclick="addToCart('Black Berry Dollar', 850)">Add to Cart</button>
         </div>
 
         <div class="fishdetails">
             <img class="fishimg" src="clown.jpg" alt="Clown Loaches">
-            <p class="name" onclick="toggleDescription('desc4')">Clown Loaches 4</p>
-            <p class="price">Price: Rs. 600</p>
-            <p class="description" id="desc4" style="display: none;">Known for their orange and black stripes, Clown Loaches are lively and social. Lifespan: Up to 12 years. Ideal pH: 6.0 to 7.5.</p>
+            <p class="name" onclick="toggleDescription('desc04')">Clown Loaches 4"</p>
+            <p class="price">Price: ₹600.00</p>
+            <p class="description" id="desc04" style="display: none;">Known for their orange and black stripes, Clown Loaches are lively and social. Lifespan: Up to 12 years. Ideal pH: 6.0 to 7.5.</p>
             <button class="cartbutton" onclick="addToCart('Clown Loaches', 600)">Add to Cart</button>
         </div>
 
         <div class="fishdetails">
             <img class="fishimg" src="clownloach23.png" alt="Clown Loaches">
-            <p class="name" onclick="toggleDescription('desc8')">Clown Loaches 2-3"</p>
-            <p class="price">Price: Rs. 300 </p>
-            <p class="description" id="desc8" style="display: none;">Known for their orange and black stripes, Clown Loaches are lively and social. Lifespan: Up to 12 years. Ideal pH: 6.0 to 7.5.</p>
-            <button class="cartbutton" onclick="addToCart('Clown Loaches', 600)">Add to Cart</button>
+            <p class="name" onclick="toggleDescription('desc05')">Clown Loaches 2-3"</p>
+            <p class="price">Price: ₹300.00</p>
+            <p class="description" id="desc05" style="display: none;">Known for their orange and black stripes, Clown Loaches are lively and social. Lifespan: Up to 12 years. Ideal pH: 6.0 to 7.5.</p>
+            <button class="cartbutton" onclick="addToCart('Clown Loaches', 300)">Add to Cart</button>
         </div>
 
         <div class="fishdetails">
             <img class="fishimg" src="frontosa.jpg" alt="Frontosa Burundi">
-            <p class="name" onclick="toggleDescription('desc5')">Frontosa Burundi 2-3</p>
-            <p class="price">Price: Rs. 1500 </p>
-            <p class="description" id="desc5" style="display: none;">Known for its unique hump and striking appearance, the Frontosa Burundi thrives in large tanks. Lifespan: Up to 20 years. Ideal pH: 7.5 to 9.0.</p>
+            <p class="name" onclick="toggleDescription('desc06')">Frontosa Burundi 2-3"</p>
+            <p class="price">Price: ₹1,500.00</p>
+            <p class="description" id="desc06" style="display: none;">Known for its unique hump and striking appearance, the Frontosa Burundi thrives in large tanks. Lifespan: Up to 20 years. Ideal pH: 7.5 to 9.0.</p>
             <button class="cartbutton" onclick="addToCart('Frontosa Burundi', 1500)">Add to Cart</button>
         </div>
 
         <div class="fishdetails">
             <img class="fishimg" src="frontosaburundi.png" alt="Frontosa Burundi">
-            <p class="name" onclick="toggleDescription('desc9')">Frontosa Burundi 2"</p>
-            <p class="price">Price: Rs. 450 </p>
-            <p class="description" id="desc9" style="display: none;">Known for its unique hump and striking appearance, the Frontosa Burundi thrives in large tanks. Lifespan: Up to 20 years. Ideal pH: 7.5 to 9.0.</p>
-            <button class="cartbutton" onclick="addToCart('Frontosa Burundi', 1500)">Add to Cart</button>
+            <p class="name" onclick="toggleDescription('desc07')">Frontosa Burundi 2"</p>
+            <p class="price">Price: ₹450.00</p>
+            <p class="description" id="desc07" style="display: none;">Known for its unique hump and striking appearance, the Frontosa Burundi thrives in large tanks. Lifespan: Up to 20 years. Ideal pH: 7.5 to 9.0.</p>
+            <button class="cartbutton" onclick="addToCart('Frontosa Burundi', 450)">Add to Cart</button>
         </div>
 
         <div class="fishdetails">
             <img class="fishimg" src="superredmonkeyfries.png" alt="Super Red Monkey Fries">
-            <p class="name" onclick="toggleDescription('desc24')">Super Red Monkey Fries 2"-3"</p>
-            <p class="price">Price: Rs.1500</p>
-            <p class="description" id="desc24" style="display: none;">
+            <p class="name" onclick="toggleDescription('desc08')">Super Red Monkey Fries 2-3"</p>
+            <p class="price">Price: ₹1,500.00</p>
+            <p class="description" id="desc08" style="display: none;">
                 <b>Description:</b> The Super Red Monkey Fries is a captivating freshwater fish known for its vibrant red coloration and playful nature. Ideal for aquarists looking for a lively addition to their tank, these fish thrive in groups and require ample space and hiding spots. They are generally peaceful but can exhibit territorial behavior during breeding.
                 <b>pH:</b> Ideal pH range is 6.5 to 7.5, with slightly acidic to neutral water.<br>
                 <b>Size:</b> Can grow up to 5 inches (12.7 cm) in length as adults.<br>
@@ -123,9 +122,9 @@
 
         <div class="fishdetails">
             <img class="fishimg" src="srdflowerhorn.png" alt="SRD Flowerhorn">
-            <p class="name" onclick="toggleDescription('desc25')">SRD Flowerhorn 4" AAA Grade Monster KOK</p>
-            <p class="price">Price: Rs.1800</p>
-            <p class="description" id="desc25" style="display: none;">
+            <p class="name" onclick="toggleDescription('desc09')">SRD Flowerhorn 4" AAA Grade Monster KOK</p>
+            <p class="price">Price: ₹1,800.00</p>
+            <p class="description" id="desc09" style="display: none;">
                 <b>Description:</b> The SRD Flowerhorn is an exquisite freshwater fish, celebrated for its vibrant coloration and distinctive head shape. This AAA Grade specimen features a prominent KOK, making it a showpiece in any aquarium. Known for its strong personality, the Flowerhorn thrives in a spacious environment with plenty of hiding spots. They are territorial and can be aggressive, especially during breeding.
                 <b>pH:</b> Ideal pH range is 6.0 to 7.5 for optimal health.<br>
                 <b>Size:</b> Can reach up to 12 inches (30 cm) as adults.<br>
@@ -136,9 +135,9 @@
 
         <div class="fishdetails">
             <img class="fishimg" src="menerambo.png" alt="Menerambo">
-            <p class="name" onclick="toggleDescription('desc26')">Menerambo 4"</p>
-            <p class="price">Price: Rs. 1,200</p>
-            <p class="description" id="desc26" style="display: none;">
+            <p class="name" onclick="toggleDescription('desc10')">Menerambo 4"</p>
+            <p class="price">Price: ₹1,200.00</p>
+            <p class="description" id="desc10" style="display: none;">
                 <b>Description:</b> The Menerambo, also known as the Menerambo Cichlid, is a vibrant freshwater fish favored for its striking appearance and lively behavior. Typically found in rivers and lakes, they enjoy spacious tanks with plenty of decorations and hiding spots. Menerambos are known for their social nature and can be kept in groups, but care should be taken to monitor aggression levels, especially during breeding.
                 <b>pH:</b> Ideal pH range is 6.5 to 7.5.<br>
                 <b>Size:</b> Can grow up to 6 inches (15 cm) as adults.<br>
@@ -149,9 +148,9 @@
 
         <div class="fishdetails">
             <img class="fishimg" src="redtiger.png" alt="Red Tiger Fish">
-            <p class="name" onclick="toggleDescription('desc27')">Red Tiger 6"</p>
-            <p class="price">Price: Rs. 1,800</p>
-            <p class="description" id="desc27" style="display: none;">
+            <p class="name" onclick="toggleDescription('desc11')">Red Tiger 6"</p>
+            <p class="price">Price: ₹1,800.00</p>
+            <p class="description" id="desc11" style="display: none;">
                 <b>Description:</b> The Red Tiger is a striking freshwater fish renowned for its vibrant coloration and active nature. With a penchant for spacious environments, it thrives in well-maintained tanks with ample swimming space and hiding spots. Typically social, Red Tigers can be kept with other compatible species; however, be mindful of their territorial tendencies during breeding seasons.
                 <b>pH:</b> Ideal pH range is 6.0 to 7.5.<br>
                 <b>Size:</b> Can grow up to 8 inches (20 cm) as adults.<br>
@@ -162,12 +161,12 @@
 
         <div class="fishdetails">
             <img class="fishimg" src="yellowyuanbao.png" alt="Yellow Yuan Bao Parrot Fish">
-            <p class="name" onclick="toggleDescription('desc28')">Yellow Yuan Bao Parrot 5"</p>
-            <p class="price">Price: Rs. 1,650</p>
-            <p class="description" id="desc28" style="display: none;">
+            <p class="name" onclick="toggleDescription('desc12')">Yellow Yuan Bao Parrot 5"</p>
+            <p class="price">Price: ₹1,650.00</p>
+            <p class="description" id="desc12" style="display: none;">
                 <b>Description:</b> The Yellow Yuan Bao Parrot is a beloved freshwater fish, known for its unique shape and vibrant yellow coloration. These fish are characterized by their round bodies and beak-like mouths, resembling a parrot. They thrive in well-planted tanks with ample space to swim. Although generally peaceful, they can exhibit territorial behavior, so it's best to house them in a spacious aquarium.
                 <b>pH:</b> Ideal pH range is 6.5 to 7.5.<br>
-                <b>Size:</b> Typically grow up to 6 inches (15 cm) as adults.<br>
+                <b>Size:</b> Typically grow up to 6 inches (15 cm) in length as adults.<br>
                 <b>Lifespan:</b> Can live 8 to 10 years with proper care and maintenance.
             </p>
             <button class="cartbutton" onclick="addToCart('Yellow Yuan Bao Parrot', 1650)">Add to Cart</button>
@@ -189,9 +188,9 @@
 
         <div class="fishdetails">
             <img class="fishimg" src="severumcichilid.png" alt="Severum Cichlid">
-            <p class="name" onclick="toggleDescription('desc_severum')">Severum Cichlid 7"</p>
+            <p class="name" onclick="toggleDescription('desc14')">Severum Cichlid 7"</p>
             <p class="price">Price: ₹1,200.00</p>
-            <p class="description" id="desc_severum" style="display: none;">
+            <p class="description" id="desc14" style="display: none;">
                 <b>Description:</b> The Severum is a South American cichlid known for its laterally compressed, oval-shaped body and vibrant colors. They come in various color morphs, including green, gold, and red. They are relatively peaceful compared to other cichlids but can be territorial, especially during breeding.<br>
                 <b>Lifespan:</b> 10–15 years with proper care.<br>
                 <b>Maximum Size:</b> 8–10 inches (20–25 cm) in captivity.<br>
@@ -201,6 +200,65 @@
             <button class="cartbutton" onclick="addToCart('Severum Cichlid', 1200)">Add to Cart</button>
         </div>
 
+        <div class="fishdetails">
+            <img class="fishimg" src="frogmouthcatfish.png" alt="Frog Mouth Catfish">
+            <p class="name" onclick="toggleDescription('desc15')">Frog Mouth Catfish 4-7"</p>
+            <p class="price">Price: ₹350.00</p>
+            <p class="description" id="desc15" style="display: none;">
+                <b>Description:</b> The Frog Mouth Catfish, known for its unique appearance resembling a frog's mouth, is a peaceful bottom dweller that adds interest to community aquariums.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5.
+                <b>Size:</b> Currently available size varies from 4 to 7 inches (10-18 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Frog Mouth Catfish', 350)">Add to Cart</button>
+        </div>
+
+        <div class="fishdetails">
+            <img class="fishimg" src="hifin.png" alt="Hi-Fin Conger Eel">
+            <p class="name" onclick="toggleDescription('desc16')">Hi-Fin Conger Eels 12-14"</p>
+            <p class="price">Price: ₹1,500.00</p>
+            <p class="description" id="desc16" style="display: none;">
+                <b>Description:</b> Hi-Fin Conger Eels are known for their elongated bodies and graceful movements. They make interesting pets for aquarists who understand their specific habitat requirements.
+                <b>pH:</b> Ideal pH range is 7.0 to 8.5.
+                <b>Size:</b> Currently available sizes are between 12 to 14 inches (30-35 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Hi-Fin Conger Eel', 1500)">Add to Cart</button>
+        </div>
+        
+        <div class="fishdetails">
+            <img class="fishimg" src="tyetrack.png" alt="Tye Track Eel">
+            <p class="name" onclick="toggleDescription('desc17')">Tye Track Eel 10"</p>
+            <p class="price">Price: ₹800.00</p>
+            <p class="description" id="desc17" style="display: none;">
+                <b>Description:</b> The Tye Track Eel is a fascinating species, known for its striking coloration and patterns. It thrives in a well-maintained aquarium with plenty of hiding spots.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5.
+                <b>Size:</b> Currently available size is 10 inches (25 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Tye Track Eel', 800)">Add to Cart</button>
+        </div>
+
+        <div class="fishdetails">
+            <img class="fishimg" src="redhead.png" alt="Imported Red Head Tapajos">
+            <p class="name" onclick="toggleDescription('desc18')">Imported Red Head Tapajos 4"</p>
+            <p class="price">Price: ₹600.00</p>
+            <p class="description" id="desc18" style="display: none;">
+                <b>Description:</b> The Imported Red Head Tapajos is a stunning cichlid known for its vibrant red coloration and unique patterns. This fish is suitable for aquarists looking to add some color to their tanks.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5.
+                <b>Size:</b> Currently available size is 4 inches (10 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Imported Red Head Tapajos', 600)">Add to Cart</button>
+        </div>
+        
+        <div class="fishdetails">
+            <img class="fishimg" src="bluejack.png" alt="Electric Blue Jack Dempsey">
+            <p class="name" onclick="toggleDescription('desc19')">Electric Blue Jack Dempsey 2"</p>
+            <p class="price">Price: ₹450.00</p>
+            <p class="description" id="desc19" style="display: none;">
+                <b>Description:</b> The Electric Blue Jack Dempsey is a smaller variety of the popular cichlid, known for its striking electric blue coloration and bold personality. A great addition for any freshwater tank.
+                <b>pH:</b> Ideal pH range is 6.5 to 7.5.
+                <b>Size:</b> Currently available size is 2 inches (5 cm).
+            </p>
+            <button class="cartbutton" onclick="addToCart('Electric Blue Jack Dempsey', 450)">Add to Cart</button>
+        </div>
     </div>
     
     <script src="script.js"></script>
